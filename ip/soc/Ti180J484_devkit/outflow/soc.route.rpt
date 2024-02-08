@@ -1,0 +1,28 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307.1.14 
+Date: Thu Feb 08 11:55:45 2024
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+ 
+Family: Titanium 
+Device: Ti180J484
+Top-level Entity Name: soc
+
+
+---------- GBUFCE Assignments (begin) ----------
+
+
++--------------+----------+----------+
+|  Clock Net   | GBUFCE_X | GBUFCE_Y |
++--------------+----------+----------+
+| io_jtag_tck  |   164    |   642    |
+| io_systemClk |   170    |    1     |
++--------------+----------+----------+
+
+
+----------- GBUFCE Assignments (end) ----------
+
+
+Elapsed time for routing: 0 hours 1 minutes 3 seconds
+Elapsed time for entire flow: 0 hours 8 minutes 44 seconds

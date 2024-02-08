@@ -1,0 +1,36 @@
+
+# Efinity Interface Configuration
+# Version: 2023.2.307.1.14
+# Date: 2024-02-08 11:48
+
+# Copyright (C) 2013 - 2023 Efinix Inc. All rights reserved.
+
+# [required | optional] (input|output|clkout), x, y, z, __bypass__|[~|!]<clock>, [[~|!]<pin_name>] | __vcc__ | __gnd__
+clkout, 18, 0, -1, io_systemClk
+clkout, 78, 0, -1, io_systemClk
+clkout, 85, 0, -1, io_systemClk
+clkout, 86, 0, -1, io_systemClk
+clkout, 87, 0, -1, io_systemClk
+clkout, 88, 0, -1, io_systemClk
+optional input, 0, 619, 5, __bypass__, ddr_pll_refclk
+input, 127, 0, 1, __bypass__, io_asyncResetn_in
+input, 136, 0, 1, __bypass__, io_clk_rst
+input, 0, 618, 1, __bypass__, io_jtag_tck
+input, 0, 16, 5, __bypass__, io_jtag_tdi
+output, 334, 16, 2, __bypass__, io_jtag_tdo
+input, 334, 14, 3, __bypass__, io_jtag_tms
+input, 170, 0, 1, __bypass__, io_systemClk
+optional input, 109, 0, 1, __bypass__, my_pll_clk
+input, 167, 0, 1, __bypass__, pll_fb_CLKOUT0
+input, 91, 0, 3, __bypass__, system_spi_0_io_data_0_read
+output, 86, 0, 0, __bypass__, system_spi_0_io_data_0_write
+output, 88, 0, 2, __bypass__, system_spi_0_io_data_0_writeEnable
+input, 92, 0, 1, __bypass__, system_spi_0_io_data_1_read
+output, 88, 0, 0, __bypass__, system_spi_0_io_data_1_write
+output, 88, 0, 4, __bypass__, system_spi_0_io_data_1_writeEnable
+output, 17, 0, 2, __bypass__, system_spi_0_io_sclk_write
+output, 77, 0, 0, __bypass__, system_spi_0_io_ss
+input, 334, 11, 3, __bypass__, system_uart_0_io_rxd
+output, 334, 15, 0, __bypass__, system_uart_0_io_txd
+input, 0, 13, 9, __bypass__, systemClk_locked
+required output, 0, 8, 0, __bypass__, systemClk_rstn

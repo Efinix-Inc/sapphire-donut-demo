@@ -1,0 +1,54 @@
+clock {
+  name: "io_systemClk"
+  period: 5000
+  target_pin {
+    cell: "io_systemClk"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 110
+    analysis: MAX
+  }
+  uncertainty {
+    value: 70
+    analysis: MIN
+  }
+}
+clock {
+  name: "io_jtag_tck"
+  period: 100000
+  target_pin {
+    cell: "io_jtag_tck"
+    port: "INPAD"
+  }
+  origin: SDC
+  uncertainty {
+    value: 110
+    analysis: MAX
+  }
+  uncertainty {
+    value: 70
+    analysis: MIN
+  }
+}
+exception {
+  type: FALSE_PATH
+  from {
+    clock: "io_systemClk"
+  }
+  to {
+    clock: "io_jtag_tck"
+  }
+  analysis: BOTH
+}
+exception {
+  type: FALSE_PATH
+  from {
+    clock: "io_jtag_tck"
+  }
+  to {
+    clock: "io_systemClk"
+  }
+  analysis: BOTH
+}

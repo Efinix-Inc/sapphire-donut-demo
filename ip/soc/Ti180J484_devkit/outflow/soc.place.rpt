@@ -1,0 +1,969 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307.1.14 
+Date: Thu Feb 08 11:48:40 2024
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+ 
+Family: Titanium 
+Device: Ti180J484
+Top-level Entity Name: soc
+Elapsed time for packing: 0 hours 0 minutes 0 seconds
+
+---------- Resource Summary (begin) ----------
+Inputs: 9 / 3706 (0.24%)
+Outputs: 15 / 4655 (0.32%)
+Global Clocks (GBUF): 2 / 32 (6.25%)
+Regional Clocks (RBUF): 0 / 48 (0.00%)
+	RBUF: Core: 0 / 32 (0.00%)
+	RBUF: Periphery: 0 / 8 (0.00%)
+	RBUF: Multi-Region: 0 / 8 (0.00%)
+XLRs: 57224 / 172800 (33.12%)
+	XLRs needed for Logic: 26490 / 172800 (15.33%)
+	XLRs needed for Logic + FF: 9159 / 172800 (5.30%)
+	XLRs needed for Adder: 2430 / 172800 (1.41%)
+	XLRs needed for Adder + FF: 1313 / 172800 (0.76%)
+	XLRs needed for FF: 13268 / 172800 (7.68%)
+	XLRs needed for SRL8: 12 / 32000 (0.04%)
+	XLRs needed for SRL8+FF: 0 / 32000 (0.00%)
+	XLRs needed for Routing: 4552 / 172800 (2.63%)
+Memory Blocks: 868 / 1280 (67.81%)
+DSP Blocks: 25 / 640 (3.91%)
+---------- Resource Summary (end) ----------
+
+
+---------- DSP Packer Summary (begin) ----------
+
+	DSP48 blocks required to legally pack design: 25
+	DSP48 blocks recoverable by optimizing:
+		-> DSP24/12 control signals & parameters: 0
+	Best case scenario DSP count after optimizing: 25
+
+---------- DSP Packer Summary (end) ----------
+
+
+---------- DSP48 Block Information (begin) ----------
+
++--------------------------------------------------------------+--------+--------+---------+-------+-------+-------+-------------+
+|                             NAME                             |  MODE  | SIGNED | SHIFTER | M_SEL | N_SEL | W_SEL | CASCOUT_SEL |
++--------------------------------------------------------------+--------+--------+---------+-------+-------+-------+-------------+
+| soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/mult_4821 | NORMAL |  true  |  false  |   P   |   C   |   P   |      P      |
+| soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/mult_4822 | NORMAL |  true  |  false  |   P   |   C   |   P   |      P      |
+| soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/mult_4823 | NORMAL |  true  |  false  |   P   |   C   |   P   |      P      |
+| soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/mult_4851 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/mult_4852 | NORMAL |  true  |  false  |   P   |   C   |   P   |      P      |
+| soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/mult_4853 | NORMAL |  true  |  false  |   P   |   C   |   P   |      P      |
+| soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/mult_4854 | NORMAL |  true  |  false  |   P   |   C   |   P   |      P      |
+| soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/mult_4850 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/mult_4851 | NORMAL |  true  |  false  |   P   |   C   |   P   |      P      |
+| soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/mult_4852 | NORMAL |  true  |  false  |   P   |   C   |   P   |      P      |
+| soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/mult_4853 | NORMAL |  true  |  false  |   P   |   C   |   P   |      P      |
+| soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/mult_4850 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/mult_4851 | NORMAL |  true  |  false  |   P   |   C   |   P   |      P      |
+| soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/mult_4852 | NORMAL |  true  |  false  |   P   |   C   |   P   |      P      |
+| soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/mult_4853 | NORMAL |  true  |  false  |   P   |   C   |   P   |      P      |
+|     soc_inst/u_EfxSapphireSoc/system_fpu_logic/mult_3232     | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+|     soc_inst/u_EfxSapphireSoc/system_fpu_logic/mult_3233     | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+|     soc_inst/u_EfxSapphireSoc/system_fpu_logic/mult_3234     | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+|     soc_inst/u_EfxSapphireSoc/system_fpu_logic/mult_3235     | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+|     soc_inst/u_EfxSapphireSoc/system_fpu_logic/mult_3236     | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+|     soc_inst/u_EfxSapphireSoc/system_fpu_logic/mult_3237     | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+|     soc_inst/u_EfxSapphireSoc/system_fpu_logic/mult_3238     | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+|     soc_inst/u_EfxSapphireSoc/system_fpu_logic/mult_3239     | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+|     soc_inst/u_EfxSapphireSoc/system_fpu_logic/mult_3240     | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
+| soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/mult_4820 | NORMAL | false  |  false  |   P   |   C   |   P   |      P      |
++--------------------------------------------------------------+--------+--------+---------+-------+-------+-------+-------------+
+
+----------- DSP48 Block Information (end) ----------
+
+
+---------- Simple Dual Port RAM Information (begin) ----------
+
++-------------------------------------------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+|                                                          NAME                                                           | MODE | READ_WIDTH | WRITE_WIDTH | WRITE_MODE | OUTPUT_REG |
++-------------------------------------------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/RegFilePlugin_regFile_2__D$1                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_2__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/RegFilePlugin_regFile_2__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                      soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/RegFilePlugin_regFile__D$2                      | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_0__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_1__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_2__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_3__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_1__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_4__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_3__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_5__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_2__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_4__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_6__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_5__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_7__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_6__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/ways_0_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_7__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/ways_1_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/ways_0_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/ways_2_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/ways_1_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/ways_3_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/ways_2_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/ways_4_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/ways_3_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/ways_5_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/ways_4_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/ways_6_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/ways_5_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/ways_7_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/ways_6_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_0__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/ways_7_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_2__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_1__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_3__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_3__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_4__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_4__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_5__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_5__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_6__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_6__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_7__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_7__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_0__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_0__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusCachedPlugin_cache/banks_1__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_0_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_0_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_1_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_0_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_1_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_0_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_0_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_0_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_0_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_0_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_0_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_1_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_1_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_2_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_1_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_2_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_1_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_1_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_1_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_1_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_1_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_1_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_1_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_2_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_2_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_3_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_2_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_3_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_2_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_2_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_2_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_2_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_2_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_2_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_2_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_3_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_3_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_4_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_3_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_4_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_3_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_3_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_3_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_3_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_3_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_3_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_3_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_4_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_4_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_5_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_4_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_5_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_4_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_4_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_4_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_4_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_4_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_4_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_4_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_5_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_5_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_6_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_5_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_6_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_5_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_5_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_5_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_5_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_5_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_5_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_5_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_6_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_6_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_7_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_6_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_7_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_6_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_6_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_6_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_6_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_6_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_6_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_6_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_7_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_7_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_7_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_7_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_7_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_7_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_7_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_7_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_7_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_7_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_0_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_0_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/ways_0_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                      soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/RegFilePlugin_regFile__D$1                      | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/RegFilePlugin_regFile_2__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_2__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/RegFilePlugin_regFile_2__D$1                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                      soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/RegFilePlugin_regFile__D$2                      | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_0__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_1__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_2__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_3__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_1__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_4__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_3__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_5__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_2__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_4__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_6__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_5__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_7__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_6__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/ways_0_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_7__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/ways_1_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/ways_0_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/ways_2_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/ways_1_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/ways_3_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/ways_2_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/ways_4_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/ways_3_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/ways_5_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/ways_4_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/ways_6_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/ways_5_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/ways_7_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/ways_6_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_0__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/ways_7_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_2__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_1__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_3__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_3__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_4__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_4__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_5__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_5__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_6__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_6__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_7__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_7__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_0__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_0__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/IBusCachedPlugin_cache/banks_1__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_0_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_0_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_1_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_0_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_1_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_0_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_0_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_0_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_0_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_0_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_0_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_1_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_1_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_2_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_1_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_2_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_1_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_1_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_1_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_1_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_1_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_1_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_1_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_2_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_2_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_3_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_2_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_3_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_2_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_2_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_2_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_2_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_2_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_2_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_2_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_3_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_3_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_4_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_3_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_4_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_3_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_3_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_3_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_3_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_3_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_3_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_3_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_4_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_4_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_5_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_4_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_5_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_4_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_4_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_4_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_4_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_4_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_4_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_4_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_5_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_5_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_6_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_5_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_6_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_5_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_5_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_5_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_5_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_5_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_5_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_5_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_6_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_6_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_7_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_6_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_7_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_6_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_6_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_6_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_6_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_6_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_6_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_6_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_7_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_7_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_7_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_7_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_7_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_7_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_7_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_7_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_7_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_7_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_0_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_0_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/ways_0_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                      soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/RegFilePlugin_regFile__D$1                      | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/RegFilePlugin_regFile_2__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_2__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/RegFilePlugin_regFile_2__D$1                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                      soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/RegFilePlugin_regFile__D$2                      | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_0__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_1__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_2__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_3__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_1__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_4__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_3__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_5__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_2__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_4__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_6__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_5__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_7__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_6__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/ways_0_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_7__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/ways_1_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/ways_0_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/ways_2_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/ways_1_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/ways_3_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/ways_2_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/ways_4_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/ways_3_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/ways_5_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/ways_4_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/ways_6_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/ways_5_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/ways_7_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/ways_6_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_0__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/ways_7_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_2__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_1__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_3__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_3__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_4__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_4__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_5__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_5__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_6__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_6__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_7__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_7__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_0__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_0__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/IBusCachedPlugin_cache/banks_1__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_0_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_0_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_1_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_0_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_1_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_0_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_0_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_0_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_0_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_0_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_0_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_1_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_1_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_2_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_1_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_2_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_1_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_1_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_1_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_1_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_1_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_1_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_1_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_2_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_2_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_3_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_2_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_3_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_2_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_2_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_2_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_2_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_2_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_2_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_2_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_3_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_3_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_4_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_3_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_4_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_3_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_3_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_3_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_3_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_3_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_3_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_3_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_4_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_4_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_5_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_4_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_5_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_4_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_4_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_4_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_4_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_4_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_4_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_4_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_5_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_5_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_6_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_5_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_6_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_5_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_5_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_5_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_5_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_5_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_5_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_5_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_6_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_6_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_7_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_6_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_7_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_6_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_6_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_6_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_6_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_6_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_6_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_6_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_7_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_7_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_7_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_7_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_7_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_7_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_7_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_7_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_7_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_7_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_0_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_0_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/ways_0_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                      soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/RegFilePlugin_regFile__D$1                      | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/RegFilePlugin_regFile_2__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_2__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/RegFilePlugin_regFile_2__D$1                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                      soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/RegFilePlugin_regFile__D$2                      | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_0__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_1__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_2__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_3__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_1__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_4__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_3__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_5__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_2__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_4__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_6__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_5__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_7__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_6__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/ways_0_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_7__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/ways_1_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/ways_0_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/ways_2_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/ways_1_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/ways_3_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/ways_2_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/ways_4_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/ways_3_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/ways_5_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/ways_4_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/ways_6_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/ways_5_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/ways_7_tags__D$2                | SDP  |     16     |     16      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/ways_6_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_0__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|               soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/ways_7_tags__D$1                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_2__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_1__D$12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_3__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_3__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_4__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_4__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_5__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_5__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_6__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_6__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_7__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_7__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_0__D$b12                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_0__D$c1                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                 soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/IBusCachedPlugin_cache/banks_1__D$2                  | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_0_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_0_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_1_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_0_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_1_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_0_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_0_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_0_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_0_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_0_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_0_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_1_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_1_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_2_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_1_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_2_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_1_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_1_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_1_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_1_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_1_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_1_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_1_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_2_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_2_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_3_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_2_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_3_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_2_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_2_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_2_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_2_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_2_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_2_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_2_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_3_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_3_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_4_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_3_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_4_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_3_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_3_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_3_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_3_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_3_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_3_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_3_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_4_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_4_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_5_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_4_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_5_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_4_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_4_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_4_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_4_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_4_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_4_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_4_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_5_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_5_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_6_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_5_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_6_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_5_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_5_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_5_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_5_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_5_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_5_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_5_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_6_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_6_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_7_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_6_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_7_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_6_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_6_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_6_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_6_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_6_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_6_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_6_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_7_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_7_tags__D$1                     | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_7_tags_2__D$1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_7_data_symbol1                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_7_data_symbol2                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_7_data_symbol3                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_7_data_symbol4                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_7_data_symbol5                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_7_data_symbol6                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_7_data_symbol7                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                    soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_0_tags_2__D$2                    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                   soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_0_data_symbol0                    | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/ways_0_tags__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                      soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/RegFilePlugin_regFile__D$1                      | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                                soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_ram_3__D$2                                 | SDP  |     20     |     20      | READ_FIRST |   false    |
+|                                soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_ram_3__D$c1                                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                               soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_ram_2__D$b12                                | SDP  |     20     |     20      | READ_FIRST |   false    |
+|                                 soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_ram__D$12                                 | SDP  |     20     |     20      | READ_FIRST |   false    |
+|                                soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_ram_3__D$12                                | SDP  |     20     |     20      | READ_FIRST |   false    |
+|                                soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_ram_2__D$12                                | SDP  |     20     |     20      | READ_FIRST |   false    |
+|                                soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_ram_2__D$2                                 | SDP  |     20     |     20      | READ_FIRST |   false    |
+|                                soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_ram_2__D$c1                                | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                                 soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_ram__D$2                                  | SDP  |     20     |     20      | READ_FIRST |   false    |
+|                                soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_ram__D$b12                                 | SDP  |     20     |     20      | READ_FIRST |   false    |
+|                                 soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_ram__D$c1                                 | SDP  |     8      |      8      | READ_FIRST |   false    |
+|                               soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_ram_3__D$b12                                | SDP  |     20     |     20      | READ_FIRST |   false    |
+| soc_inst/u_EfxSapphireSoc/toplevel_system_cores_0_logic_cpu_dBus_Bridge_withWriteBuffer_syncLogic_cmdCtx_fifo/logic_ram | SDP  |     4      |      4      | READ_FIRST |   false    |
+| soc_inst/u_EfxSapphireSoc/toplevel_system_cores_1_logic_cpu_dBus_Bridge_withWriteBuffer_syncLogic_cmdCtx_fifo/logic_ram | SDP  |     4      |      4      | READ_FIRST |   false    |
+| soc_inst/u_EfxSapphireSoc/toplevel_system_cores_2_logic_cpu_dBus_Bridge_withWriteBuffer_syncLogic_cmdCtx_fifo/logic_ram | SDP  |     4      |      4      | READ_FIRST |   false    |
+| soc_inst/u_EfxSapphireSoc/toplevel_system_cores_3_logic_cpu_dBus_Bridge_withWriteBuffer_syncLogic_cmdCtx_fifo/logic_ram | SDP  |     4      |      4      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$b02                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$302                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$03b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$b0b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$b012                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$032                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$b0c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$b0d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$b0e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$b0f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$b0g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$0312                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$03c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$03d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$03e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$03f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$03g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$b02                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$b3b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$30b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$3012                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$b32                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$30c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$30d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$30e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$30f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$30g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$b312                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$b3c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$b3d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$b3e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$b3f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$b3g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$302                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$03b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$b0b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$b012                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$032                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$b0c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$b0d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$b0e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$b0f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$b0g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$0312                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$03c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$03d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$03e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$03f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$03g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$b02                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$b3b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$30b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$3012                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$b32                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$30c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$30d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$30e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$30f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$30g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$b312                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$b3c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$b3d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$b3e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$b3f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$b3g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$302                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$03b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$b0b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$b012                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$032                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$b0c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$b0d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$b0e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$b0f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$b0g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$0312                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$03c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$03d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$03e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$03f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$03g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$b02                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$b3b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$30b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$3012                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$b32                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$30c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$30d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$30e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$30f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$30g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$b312                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$b3c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$b3d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$b3e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$b3f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$b3g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$302                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$03b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$b0b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$b012                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$032                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$b0c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$b0d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$b0e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$b0f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$b0g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$0312                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$03c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$03d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$03e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$03f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$03g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$b02                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$b3b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$30b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$3012                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$b32                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$30c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$30d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$30e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$30f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$30g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$b312                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$b3c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$b3d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$b3e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$b3f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$b3g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$302                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$03b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$b0b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$b012                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$032                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$b0c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$b0d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$b0e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$b0f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$b0g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$0312                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$03c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$03d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$03e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$03f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$03g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$b02                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$b3b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$30b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$3012                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$b32                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$30c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$30d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$30e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$30f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$30g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$b312                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$b3c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$b3d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$b3e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$b3f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol4__D$b3g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$302                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$03b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$b0b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$b012                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$032                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$b0c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$b0d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$b0e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$b0f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$b0g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$0312                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$03c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$03d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$03e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$03f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$03g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$b02                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$b3b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$30b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$3012                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$b32                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$30c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$30d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$30e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$30f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$30g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$b312                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$b3c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$b3d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$b3e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$b3f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol5__D$b3g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$302                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$03b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$b0b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$b012                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$032                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$b0c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$b0d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$b0e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$b0f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$b0g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$0312                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$03c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$03d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$03e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$03f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$03g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$b02                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$b3b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$30b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$3012                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$b32                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$30c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$30d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$30e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$30f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$30g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$b312                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$b3c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$b3d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$b3e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$b3f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol6__D$b3g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$302                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$03b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$b0b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$b012                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$032                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$b0c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$b0d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$b0e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$b0f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$b0g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$0312                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$03c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$03d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$03e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$03f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$03g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$b3b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$30b12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$3012                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$b32                              | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$30c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$30d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$30e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$30f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$30g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$b312                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$b3c12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$b3d12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$b3e12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                            soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$b3f12                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                             soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol7__D$b3g1                             | SDP  |     1      |      1      | READ_FIRST |   false    |
+|       soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/bridge_write_streamUnbuffered_queueWithOccupancy/logic_ram       | SDP  |     8      |      8      | READ_FIRST |   false    |
+| soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram | SDP  |     8      |      8      | READ_FIRST |   false    |
+|    soc_inst/u_EfxSapphireSoc/system_spi_0_io_logic/mapping_cmdLogic_streamUnbuffered_queueWithAvailability/logic_ram    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|     soc_inst/u_EfxSapphireSoc/system_spi_0_io_logic/system_spi_0_io_logic_ctrl_io_rsp_queueWithOccupancy/logic_ram      | SDP  |     8      |      8      | READ_FIRST |   false    |
++-------------------------------------------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+
+----------- Simple Dual Port RAM Information (end) ----------
+
+
+---------- IO Interface Summary (begin) ----------
+
++------------------------+--------------+
+| Missing Interface Pins | Input/Output |
++------------------------+--------------+
+|       io_clk_rst       |    Input     |
+|     pll_fb_CLKOUT0     |    Input     |
++------------------------+--------------+
+
+----------- IO Interface Summary (end) ----------
+
+Elapsed time for placement: 0 hours 6 minutes 35 seconds

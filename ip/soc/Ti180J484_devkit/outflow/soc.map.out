@@ -1,0 +1,955 @@
+[EFX-0000 INFO] Efinix FPGA Synthesis.
+[EFX-0000 INFO] Version: 2023.2.307.1.14
+[EFX-0000 INFO] Compiled: Dec 15 2023.
+[EFX-0000 INFO] 
+[EFX-0000 INFO] Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+INFO: Read project database "C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/soc.xml"
+[EFX-0017 WARNING] Ignoring non-existing include dir 'C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/ip/soc_ti180'.
+[EFX-0017 WARNING] Ignoring non-existing include dir 'ip/soc_ti180'.
+-- Analyzing Verilog file 'C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v' (VERI-1482)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(8): INFO: compiling module 'EFX_IBUF' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(16): INFO: compiling module 'EFX_OBUF' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(23): INFO: compiling module 'EFX_IO_BUF' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(33): INFO: compiling module 'EFX_CLKOUT' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(41): INFO: compiling module 'EFX_IREG' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(51): INFO: compiling module 'EFX_OREG' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(60): INFO: compiling module 'EFX_IOREG' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(75): INFO: compiling module 'EFX_IDDIO' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(87): INFO: compiling module 'EFX_ODDIO' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(99): INFO: compiling module 'EFX_GPIO_V1' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(118): INFO: compiling module 'EFX_PLL_V1' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(136): INFO: compiling module 'EFX_OSC_V1' (VERI-1018)
+INFO: Read project database "C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/soc.xml"
+INFO: ***** Beginning Analysis ... *****
+INFO: default VHDL library search path is now "C:/Efinity/2023.2/sim_models/vhdl/packages/vhdl_2008" (VHDL-1504)
+-- Analyzing Verilog file 'C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v' (VERI-1482)
+-- Analyzing Verilog file 'C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\design_modules.v' (VERI-1482)
+-- Analyzing Verilog file 'C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v' (VERI-1482)
+-- Analyzing Verilog file 'C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\top_soc.v' (VERI-1482)
+INFO: Analysis took 0.625267 seconds.
+INFO: 	Analysis took 0.328125 seconds (approximately) in total CPU time.
+INFO: Analysis virtual memory usage: begin = 55.728 MB, end = 81.232 MB, delta = 25.504 MB
+INFO: 	Analysis peak virtual memory usage = 81.232 MB
+INFO: Analysis resident set memory usage: begin = 58.044 MB, end = 84.38 MB, delta = 26.336 MB
+INFO: 	Analysis peak resident set memory usage = 84.384 MB
+INFO: ***** Ending Analysis ... *****
+INFO: ***** Beginning Elaboration ... *****
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\top_soc.v(20): INFO: compiling module 'top_soc' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\design_modules.v(1716): INFO: compiling module 'reset_synchronizer' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(49): INFO: compiling module 'soc' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(107): INFO: compiling module 'EfxSapphireSoc_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(60667): INFO: compiling module 'VexRiscv_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(63135): INFO: extracting RAM for identifier 'RegFilePlugin_regFile' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(77857): INFO: compiling module 'InstructionCache_3_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(78185): INFO: extracting RAM for identifier 'banks_0' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(78186): INFO: extracting RAM for identifier 'banks_1' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(78187): INFO: extracting RAM for identifier 'banks_2' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(78188): INFO: extracting RAM for identifier 'banks_3' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(78189): INFO: extracting RAM for identifier 'banks_4' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(78190): INFO: extracting RAM for identifier 'banks_5' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(78191): INFO: extracting RAM for identifier 'banks_6' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(78192): INFO: extracting RAM for identifier 'banks_7' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(78193): INFO: extracting RAM for identifier 'ways_0_tags' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(78194): INFO: extracting RAM for identifier 'ways_1_tags' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(78195): INFO: extracting RAM for identifier 'ways_2_tags' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(78196): INFO: extracting RAM for identifier 'ways_3_tags' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(78197): INFO: extracting RAM for identifier 'ways_4_tags' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(78198): INFO: extracting RAM for identifier 'ways_5_tags' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(78199): INFO: extracting RAM for identifier 'ways_6_tags' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(78200): INFO: extracting RAM for identifier 'ways_7_tags' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75097): INFO: compiling module 'DataCache_3_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75734): INFO: extracting RAM for identifier 'ways_0_tags' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75735): INFO: extracting RAM for identifier 'ways_0_data_symbol0' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75736): INFO: extracting RAM for identifier 'ways_0_data_symbol1' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75737): INFO: extracting RAM for identifier 'ways_0_data_symbol2' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75738): INFO: extracting RAM for identifier 'ways_0_data_symbol3' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75739): INFO: extracting RAM for identifier 'ways_0_data_symbol4' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75740): INFO: extracting RAM for identifier 'ways_0_data_symbol5' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75741): INFO: extracting RAM for identifier 'ways_0_data_symbol6' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75742): INFO: extracting RAM for identifier 'ways_0_data_symbol7' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75751): INFO: extracting RAM for identifier 'ways_1_tags' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75752): INFO: extracting RAM for identifier 'ways_1_data_symbol0' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75753): INFO: extracting RAM for identifier 'ways_1_data_symbol1' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75754): INFO: extracting RAM for identifier 'ways_1_data_symbol2' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75755): INFO: extracting RAM for identifier 'ways_1_data_symbol3' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75756): INFO: extracting RAM for identifier 'ways_1_data_symbol4' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75757): INFO: extracting RAM for identifier 'ways_1_data_symbol5' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75758): INFO: extracting RAM for identifier 'ways_1_data_symbol6' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75759): INFO: extracting RAM for identifier 'ways_1_data_symbol7' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75768): INFO: extracting RAM for identifier 'ways_2_tags' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75769): INFO: extracting RAM for identifier 'ways_2_data_symbol0' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75770): INFO: extracting RAM for identifier 'ways_2_data_symbol1' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75771): INFO: extracting RAM for identifier 'ways_2_data_symbol2' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75772): INFO: extracting RAM for identifier 'ways_2_data_symbol3' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75773): INFO: extracting RAM for identifier 'ways_2_data_symbol4' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75774): INFO: extracting RAM for identifier 'ways_2_data_symbol5' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75775): INFO: extracting RAM for identifier 'ways_2_data_symbol6' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75776): INFO: extracting RAM for identifier 'ways_2_data_symbol7' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75785): INFO: extracting RAM for identifier 'ways_3_tags' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75786): INFO: extracting RAM for identifier 'ways_3_data_symbol0' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75787): INFO: extracting RAM for identifier 'ways_3_data_symbol1' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75788): INFO: extracting RAM for identifier 'ways_3_data_symbol2' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75789): INFO: extracting RAM for identifier 'ways_3_data_symbol3' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75790): INFO: extracting RAM for identifier 'ways_3_data_symbol4' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75791): INFO: extracting RAM for identifier 'ways_3_data_symbol5' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75792): INFO: extracting RAM for identifier 'ways_3_data_symbol6' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75793): INFO: extracting RAM for identifier 'ways_3_data_symbol7' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75802): INFO: extracting RAM for identifier 'ways_4_tags' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75803): INFO: extracting RAM for identifier 'ways_4_data_symbol0' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75804): INFO: extracting RAM for identifier 'ways_4_data_symbol1' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75805): INFO: extracting RAM for identifier 'ways_4_data_symbol2' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75806): INFO: extracting RAM for identifier 'ways_4_data_symbol3' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75807): INFO: extracting RAM for identifier 'ways_4_data_symbol4' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75808): INFO: extracting RAM for identifier 'ways_4_data_symbol5' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75809): INFO: extracting RAM for identifier 'ways_4_data_symbol6' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75810): INFO: extracting RAM for identifier 'ways_4_data_symbol7' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75819): INFO: extracting RAM for identifier 'ways_5_tags' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75820): INFO: extracting RAM for identifier 'ways_5_data_symbol0' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75821): INFO: extracting RAM for identifier 'ways_5_data_symbol1' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75822): INFO: extracting RAM for identifier 'ways_5_data_symbol2' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75823): INFO: extracting RAM for identifier 'ways_5_data_symbol3' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75824): INFO: extracting RAM for identifier 'ways_5_data_symbol4' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75825): INFO: extracting RAM for identifier 'ways_5_data_symbol5' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75826): INFO: extracting RAM for identifier 'ways_5_data_symbol6' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75827): INFO: extracting RAM for identifier 'ways_5_data_symbol7' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75836): INFO: extracting RAM for identifier 'ways_6_tags' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75837): INFO: extracting RAM for identifier 'ways_6_data_symbol0' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75838): INFO: extracting RAM for identifier 'ways_6_data_symbol1' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75839): INFO: extracting RAM for identifier 'ways_6_data_symbol2' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75840): INFO: extracting RAM for identifier 'ways_6_data_symbol3' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75841): INFO: extracting RAM for identifier 'ways_6_data_symbol4' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75842): INFO: extracting RAM for identifier 'ways_6_data_symbol5' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75843): INFO: extracting RAM for identifier 'ways_6_data_symbol6' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75844): INFO: extracting RAM for identifier 'ways_6_data_symbol7' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75853): INFO: extracting RAM for identifier 'ways_7_tags' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75854): INFO: extracting RAM for identifier 'ways_7_data_symbol0' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75855): INFO: extracting RAM for identifier 'ways_7_data_symbol1' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75856): INFO: extracting RAM for identifier 'ways_7_data_symbol2' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75857): INFO: extracting RAM for identifier 'ways_7_data_symbol3' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75858): INFO: extracting RAM for identifier 'ways_7_data_symbol4' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75859): INFO: extracting RAM for identifier 'ways_7_data_symbol5' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75860): INFO: extracting RAM for identifier 'ways_7_data_symbol6' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75861): INFO: extracting RAM for identifier 'ways_7_data_symbol7' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75870): INFO: extracting RAM for identifier 'sync_syncContext_history' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(77823): WARNING: system task 'display' is ignored for synthesis (VERI-1142)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(75078): INFO: compiling module 'BufferCC_10_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(79554): INFO: compiling module 'EfxCPUSp1_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(79625): INFO: compiling module 'EfxCPUSp2_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(60837): WARNING: net 'IBusCachedPlugin_cache_io_cpu_fetch_isRemoved' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(62069): WARNING: net 'IBusCachedPlugin_iBusRsp_output_payload_rsp_error' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(62071): WARNING: net 'IBusCachedPlugin_iBusRsp_output_payload_isRvc' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(62082): WARNING: net 'IBusCachedPlugin_decompressor_output_payload_rsp_error' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(62403): WARNING: net 'CsrPlugin_mtvec_mode[1]' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(62454): WARNING: net 'CsrPlugin_stvec_mode[1]' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(50200): INFO: compiling module 'VexRiscv_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(52668): INFO: extracting RAM for identifier 'RegFilePlugin_regFile' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(50370): WARNING: net 'IBusCachedPlugin_cache_io_cpu_fetch_isRemoved' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(51601): WARNING: net 'IBusCachedPlugin_iBusRsp_output_payload_rsp_error' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(51603): WARNING: net 'IBusCachedPlugin_iBusRsp_output_payload_isRvc' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(51614): WARNING: net 'IBusCachedPlugin_decompressor_output_payload_rsp_error' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(51935): WARNING: net 'CsrPlugin_mtvec_mode[1]' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(51986): WARNING: net 'CsrPlugin_stvec_mode[1]' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(39733): INFO: compiling module 'VexRiscv_2_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(42201): INFO: extracting RAM for identifier 'RegFilePlugin_regFile' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(39903): WARNING: net 'IBusCachedPlugin_cache_io_cpu_fetch_isRemoved' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(41134): WARNING: net 'IBusCachedPlugin_iBusRsp_output_payload_rsp_error' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(41136): WARNING: net 'IBusCachedPlugin_iBusRsp_output_payload_isRvc' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(41147): WARNING: net 'IBusCachedPlugin_decompressor_output_payload_rsp_error' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(41468): WARNING: net 'CsrPlugin_mtvec_mode[1]' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(41519): WARNING: net 'CsrPlugin_stvec_mode[1]' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(29266): INFO: compiling module 'VexRiscv_3_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(31734): INFO: extracting RAM for identifier 'RegFilePlugin_regFile' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(29436): WARNING: net 'IBusCachedPlugin_cache_io_cpu_fetch_isRemoved' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(30667): WARNING: net 'IBusCachedPlugin_iBusRsp_output_payload_rsp_error' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(30669): WARNING: net 'IBusCachedPlugin_iBusRsp_output_payload_isRvc' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(30680): WARNING: net 'IBusCachedPlugin_decompressor_output_payload_rsp_error' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(31001): WARNING: net 'CsrPlugin_mtvec_mode[1]' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(31052): WARNING: net 'CsrPlugin_stvec_mode[1]' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(15802): INFO: compiling module 'FpuCore_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(19266): INFO: extracting RAM for identifier 'rf_ram' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(19267): INFO: extracting RAM for identifier 'rf_scoreboards_0_target' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(19268): INFO: extracting RAM for identifier 'rf_scoreboards_0_hit' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(19269): INFO: extracting RAM for identifier 'rf_scoreboards_0_writes' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(19270): INFO: extracting RAM for identifier 'rf_scoreboards_1_target' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(19271): INFO: extracting RAM for identifier 'rf_scoreboards_1_hit' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(19272): INFO: extracting RAM for identifier 'rf_scoreboards_1_writes' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(19273): INFO: extracting RAM for identifier 'rf_scoreboards_2_target' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(19274): INFO: extracting RAM for identifier 'rf_scoreboards_2_hit' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(19275): INFO: extracting RAM for identifier 'rf_scoreboards_2_writes' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(19276): INFO: extracting RAM for identifier 'rf_scoreboards_3_target' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(19277): INFO: extracting RAM for identifier 'rf_scoreboards_3_hit' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(19278): INFO: extracting RAM for identifier 'rf_scoreboards_3_writes' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(74936): INFO: compiling module 'StreamFork_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(74456): INFO: compiling module 'StreamArbiter_6_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(74339): INFO: compiling module 'FpuDiv_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(74246): INFO: compiling module 'FpuSqrt_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(73794): INFO: compiling module 'StreamArbiter_7_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(28670): WARNING: system task 'display' is ignored for synthesis (VERI-1142)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(28671): WARNING: system task 'finish' is ignored for synthesis (VERI-1142)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(28680): WARNING: system task 'display' is ignored for synthesis (VERI-1142)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(28681): WARNING: system task 'finish' is ignored for synthesis (VERI-1142)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(17183): WARNING: net 'decode_shortPip_payload_value[31]' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(17204): WARNING: net 'decode_divSqrt_payload_roundMode[2]' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(17205): WARNING: net 'decode_divSqrt_payload_format[0]' does not have a driver (VDB-1002)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(14350): INFO: compiling module 'DebugModule_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(14682): INFO: extracting RAM for identifier 'logic_progbufX_mem' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(14683): INFO: extracting RAM for identifier 'logic_dataX_readMem' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(14326): INFO: compiling module 'BufferCC_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(13323): INFO: compiling module 'DebugTransportModuleJtagTap_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(13538): WARNING: system function call 'urandom' is not supported (VERI-1141)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(73730): INFO: compiling module 'FlowCCByToggle_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(73764): WARNING: system function call 'urandom' is not supported (VERI-1141)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(73765): WARNING: system function call 'urandom' is not supported (VERI-1141)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(79504): INFO: compiling module 'BufferCC_13_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(79516): WARNING: system function call 'urandom' is not supported (VERI-1141)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(79517): WARNING: system function call 'urandom' is not supported (VERI-1141)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(73644): INFO: compiling module 'FlowCCByToggle_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(79480): INFO: compiling module 'BufferCC_11_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(79456): INFO: compiling module 'BufferCC_12_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(13299): INFO: compiling module 'BufferCC_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(13146): INFO: compiling module 'StreamFifo_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(13191): INFO: extracting RAM for identifier 'logic_ram' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(13116): INFO: compiling module 'BufferCC_2_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(12956): INFO: compiling module 'BmbArbiter_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(73474): INFO: compiling module 'StreamArbiter_5_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(12672): INFO: compiling module 'BmbInvalidateMonitor_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(73321): INFO: compiling module 'StreamFifo_8_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(73366): INFO: extracting RAM for identifier 'logic_ram' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(11701): INFO: compiling module 'BmbExclusiveMonitor_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(73131): INFO: compiling module 'StreamArbiter_3_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(73038): INFO: compiling module 'StreamArbiter_4_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(11100): INFO: compiling module 'BmbArbiter_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(72824): INFO: compiling module 'StreamArbiter_2_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(72701): INFO: compiling module 'StreamFork_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(11054): INFO: compiling module 'BmbDecoder_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(10908): INFO: compiling module 'BmbArbiter_2_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(72597): INFO: compiling module 'StreamArbiter_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(10433): INFO: compiling module 'BmbDecoderPerSource_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(72514): INFO: compiling module 'BmbErrorSlave_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(72372): INFO: compiling module 'StreamArbiter_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(10295): INFO: compiling module 'BmbOnChipRam_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(10328): INFO: extracting RAM for identifier 'ram_symbol0' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(10329): INFO: extracting RAM for identifier 'ram_symbol1' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(10330): INFO: extracting RAM for identifier 'ram_symbol2' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(10331): INFO: extracting RAM for identifier 'ram_symbol3' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(10332): INFO: extracting RAM for identifier 'ram_symbol4' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(10333): INFO: extracting RAM for identifier 'ram_symbol5' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(10334): INFO: extracting RAM for identifier 'ram_symbol6' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(10335): INFO: extracting RAM for identifier 'ram_symbol7' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(10145): INFO: compiling module 'BmbDownSizerBridge_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(9915): INFO: compiling module 'BmbUnburstify_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(9685): INFO: compiling module 'BmbUnburstify_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(9326): INFO: compiling module 'BmbDecoder_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(9017): INFO: compiling module 'BmbClint_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(8521): INFO: compiling module 'BmbUartCtrl_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(72243): INFO: compiling module 'UartCtrl_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(79216): INFO: compiling module 'UartCtrlTx_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(78922): INFO: compiling module 'UartCtrlRx_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(79530): INFO: compiling module 'BufferCC_14_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(72092): INFO: compiling module 'StreamFifo_6_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(72136): INFO: extracting RAM for identifier 'logic_ram' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(8040): INFO: compiling module 'BmbSpiXdrMasterCtrl_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(71443): INFO: compiling module 'TopLevel_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(71279): INFO: compiling module 'StreamFifo_4_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(71331): INFO: extracting RAM for identifier 'logic_ram' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(71128): INFO: compiling module 'StreamFifo_5_3c5c6ba8cd47460daa75b7c3d4f9b3fe' (VERI-1018)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v(71172): INFO: extracting RAM for identifier 'logic_ram' (VERI-2571)
+C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\top_soc.v(72): WARNING: input port 'system_spi_0_io_data_2_read' remains unconnected for this instance (VDB-1053)
+INFO: Elaboration took 2.88256 seconds.
+INFO: 	Elaboration took 2.65625 seconds (approximately) in total CPU time.
+INFO: Elaboration virtual memory usage: begin = 81.232 MB, end = 343.036 MB, delta = 261.804 MB
+INFO: 	Elaboration peak virtual memory usage = 347.5 MB
+INFO: Elaboration resident set memory usage: begin = 84.392 MB, end = 337.324 MB, delta = 252.932 MB
+INFO: 	Elaboration peak resident set memory usage = 342.888 MB
+INFO: ***** Ending Elaboration ... *****
+[EFX-0000 INFO] ... Setting Synthesis Option: mode=speed
+INFO: ***** Beginning Reading Mapping Library ... *****
+-- Analyzing Verilog file 'C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(8): INFO: compiling module 'EFX_ADD' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(21): INFO: compiling module 'EFX_FF' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(38): INFO: compiling module 'EFX_COMB4' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(48): INFO: compiling module 'EFX_GBUFCE' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(57): INFO: compiling module 'EFX_LUT4' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(65): INFO: compiling module 'EFX_MULT' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(100): INFO: compiling module 'EFX_DSP48' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(156): INFO: compiling module 'EFX_DSP24' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(209): INFO: compiling module 'EFX_DSP12' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(262): INFO: compiling module 'EFX_RAM_4K' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(322): INFO: compiling module 'EFX_RAM_5K' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(394): INFO: compiling module 'EFX_DPRAM_5K' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(499): INFO: compiling module 'RAMB5' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(561): INFO: compiling module 'EFX_RAM_10K' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(653): INFO: compiling module 'EFX_RAM10' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(754): INFO: compiling module 'EFX_DPRAM10' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(884): INFO: compiling module 'EFX_SRL8' (VERI-1018)
+INFO: Reading Mapping Library took 0.0360407 seconds.
+INFO: 	Reading Mapping Library took 0.046875 seconds (approximately) in total CPU time.
+INFO: Reading Mapping Library virtual memory usage: begin = 343.816 MB, end = 340.808 MB, delta = -3.008 MB
+INFO: 	Reading Mapping Library peak virtual memory usage = 368.524 MB
+INFO: Reading Mapping Library resident set memory usage: begin = 338.3 MB, end = 335.46 MB, delta = -2.84 MB
+INFO: 	Reading Mapping Library peak resident set memory usage = 361.312 MB
+INFO: ***** Ending Reading Mapping Library ... *****
+[EFX-0000 INFO] ... Pre-synthesis checks begin
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_isValid. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77859)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[31]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[30]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[29]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[28]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[27]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[26]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[25]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[24]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[23]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[22]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[21]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[20]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[19]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[18]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[17]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[16]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[15]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[14]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[13]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'banks_0'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:78185)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'banks_1'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:78186)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'banks_2'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:78187)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'banks_3'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:78188)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'banks_4'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:78189)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'banks_5'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:78190)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'banks_6'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:78191)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'banks_7'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:78192)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_0_tags'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:78193)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_1_tags'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:78194)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_2_tags'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:78195)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_3_tags'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:78196)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_4_tags'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:78197)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_5_tags'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:78198)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_6_tags'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:78199)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_7_tags'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:78200)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_0_tags'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75734)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_0_data_symbol0'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75735)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_0_data_symbol1'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75736)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_0_data_symbol2'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75737)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_0_data_symbol3'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75738)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_0_data_symbol4'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75739)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_0_data_symbol5'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75740)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_0_data_symbol6'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75741)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_0_data_symbol7'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75742)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_1_tags'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75751)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_1_data_symbol0'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75752)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_1_data_symbol1'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75753)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_1_data_symbol2'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75754)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_1_data_symbol3'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75755)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_1_data_symbol4'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75756)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_1_data_symbol5'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75757)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_1_data_symbol6'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75758)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_1_data_symbol7'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75759)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_2_tags'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75768)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_2_data_symbol0'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75769)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_2_data_symbol1'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75770)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_2_data_symbol2'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75771)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_2_data_symbol3'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75772)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_2_data_symbol4'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75773)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_2_data_symbol5'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75774)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_2_data_symbol6'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75775)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_2_data_symbol7'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75776)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_3_tags'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75785)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_3_data_symbol0'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75786)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_3_data_symbol1'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75787)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_3_data_symbol2'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75788)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_3_data_symbol3'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75789)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_3_data_symbol4'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75790)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_3_data_symbol5'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75791)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_3_data_symbol6'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75792)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_3_data_symbol7'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75793)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_4_tags'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75802)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_4_data_symbol0'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75803)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_4_data_symbol1'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75804)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_4_data_symbol2'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75805)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_4_data_symbol3'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75806)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_4_data_symbol4'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75807)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_4_data_symbol5'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75808)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_4_data_symbol6'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75809)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_4_data_symbol7'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75810)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_5_tags'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75819)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_5_data_symbol0'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75820)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_5_data_symbol1'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75821)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_5_data_symbol2'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75822)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_5_data_symbol3'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75823)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_5_data_symbol4'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75824)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_5_data_symbol5'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75825)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_5_data_symbol6'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75826)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_5_data_symbol7'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75827)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_6_tags'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75836)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_6_data_symbol0'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75837)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_6_data_symbol1'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75838)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_6_data_symbol2'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75839)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_6_data_symbol3'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75840)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_6_data_symbol4'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75841)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_6_data_symbol5'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75842)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_6_data_symbol6'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75843)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_6_data_symbol7'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75844)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_7_tags'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75853)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_7_data_symbol0'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75854)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_7_data_symbol1'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75855)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_7_data_symbol2'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75856)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_7_data_symbol3'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75857)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_7_data_symbol4'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75858)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_7_data_symbol5'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75859)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_7_data_symbol6'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75860)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ways_7_data_symbol7'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75861)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'sync_syncContext_history'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75870)
+[EFX-0031 INFO] 'select_1688' instance is encountered with don't-care(1'bx) input, rewiring to GND. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:66286)
+[EFX-0031 INFO] 'buf_1689' instance is encountered with don't-care(1'bx) input, rewiring to GND. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:66289)
+[EFX-0031 INFO] 'buf_1690' instance is encountered with don't-care(1'bx) input, rewiring to GND. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:66290)
+[EFX-0031 INFO] 'select_2593' instance is encountered with don't-care(1'bx) input, rewiring to GND. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:67983)
+[EFX-0031 INFO] 'select_2597' instance is encountered with don't-care(1'bx) input, rewiring to GND. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:67997)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'IBusCachedPlugin_cache_io_cpu_fetch_isRemoved'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:60837)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'IBusCachedPlugin_iBusRsp_output_payload_rsp_error'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62069)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'IBusCachedPlugin_iBusRsp_output_payload_isRvc'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62071)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'IBusCachedPlugin_decompressor_output_payload_rsp_error'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62082)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'CsrPlugin_mtvec_mode[1]'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62403)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'CsrPlugin_mtvec_mode[0]'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62403)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'CsrPlugin_stvec_mode[1]'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62454)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'CsrPlugin_stvec_mode[0]'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62454)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'IBusCachedPlugin_cache_io_cpu_fetch_isRemoved'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:50370)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'IBusCachedPlugin_iBusRsp_output_payload_rsp_error'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:51601)
+[EFX-0201 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'RegFilePlugin_regFile'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:63135)
+[EFX-0031 INFO] 'select_1687' instance is encountered with don't-care(1'bx) input, rewiring to GND. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:55818)
+[EFX-0031 INFO] 'buf_1688' instance is encountered with don't-care(1'bx) input, rewiring to GND. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:55821)
+[EFX-0031 INFO] 'buf_1689' instance is encountered with don't-care(1'bx) input, rewiring to GND. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:55822)
+[EFX-0031 INFO] 'select_2592' instance is encountered with don't-care(1'bx) input, rewiring to GND. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:57515)
+[EFX-0031 INFO] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0031 INFO] 'select_2596' instance is encountered with don't-care(1'bx) input, rewiring to GND. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:57529)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'RegFilePlugin_regFile'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:52668)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'RegFilePlugin_regFile'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:42201)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'RegFilePlugin_regFile'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:31734)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'rf_ram'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19266)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'rf_scoreboards_0_target'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19267)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'rf_scoreboards_0_hit'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19268)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'rf_scoreboards_0_writes'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19269)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'rf_scoreboards_1_target'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19270)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'rf_scoreboards_1_hit'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19271)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'rf_scoreboards_1_writes'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19272)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'rf_scoreboards_2_target'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19273)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'rf_scoreboards_2_hit'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19274)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'rf_scoreboards_2_writes'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19275)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'rf_scoreboards_3_target'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19276)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'rf_scoreboards_3_hit'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19277)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'rf_scoreboards_3_writes'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19278)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'logic_progbufX_mem'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:14682)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'logic_dataX_readMem'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:14683)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'logic_ram'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:13191)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'logic_ram'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:73366)
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_0_payload_fragment_source[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_0_payload_fragment_source[1]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_source[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_source[1]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_2_payload_fragment_source[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_2_payload_fragment_source[1]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_3_payload_fragment_source[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_3_payload_fragment_source[1]=0).
+[EFX-0266 WARNING] Module Instance 'rspLogic_rspToSyncFiltred_s2mPipe_fifo' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_0_payload_fragment_source[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_0_payload_fragment_source[1]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_source[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_source[1]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_2_payload_fragment_source[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_2_payload_fragment_source[1]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_3_payload_fragment_source[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_3_payload_fragment_source[1]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[1]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[2]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[3]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[4]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[5]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[6]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[7]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[8]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[9]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[10]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[11]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[12]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[13]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[14]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[15]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[16]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[17]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[18]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[19]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[20]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[21]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[22]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[23]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[24]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[25]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[26]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[27]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[28]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[29]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[30]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[31]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[32]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[33]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[34]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[35]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[36]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[37]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[38]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[39]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[40]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[41]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[42]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[43]=0).
+[EFX-0266 WARNING] Module Instance 'tx' input pin tied to constant (io_cts=0).
+[EFX-0266 WARNING] Module Instance 'bridge_write_streamUnbuffered_queueWithOccupancy' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'mapping_cmdLogic_streamUnbuffered_queueWithAvailability' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'system_spi_0_io_logic_ctrl_io_rsp_queueWithOccupancy' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'system_cores_0_logic_cpu' input pin tied to constant (dBus_inv_payload_last=1).
+[EFX-0266 WARNING] Module Instance 'system_cores_1_logic_cpu' input pin tied to constant (dBus_inv_payload_last=1).
+[EFX-0266 WARNING] Module Instance 'system_cores_2_logic_cpu' input pin tied to constant (dBus_inv_payload_last=1).
+[EFX-0266 WARNING] Module Instance 'system_cores_3_logic_cpu' input pin tied to constant (dBus_inv_payload_last=1).
+[EFX-0266 WARNING] Module Instance 'toplevel_system_cores_0_logic_cpu_dBus_Bridge_withWriteBuffer_syncLogic_cmdCtx_fifo' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'toplevel_system_cores_1_logic_cpu_dBus_Bridge_withWriteBuffer_syncLogic_cmdCtx_fifo' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'toplevel_system_cores_2_logic_cpu_dBus_Bridge_withWriteBuffer_syncLogic_cmdCtx_fifo' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'toplevel_system_cores_3_logic_cpu_dBus_Bridge_withWriteBuffer_syncLogic_cmdCtx_fifo' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[0]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[1]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[2]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[3]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[4]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[5]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[6]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[7]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[8]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[9]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[10]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[11]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[12]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[13]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[14]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[15]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[16]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[17]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[18]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[19]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[20]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[21]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[22]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[23]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[24]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[25]=0).
+[EFX-0266 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'logic_ram'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:72136)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'logic_ram'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:71331)
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'logic_ram'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:71172)
+[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 1s)
+[EFX-0000 INFO] ... NameSpace init begin
+[EFX-0000 INFO] ... NameSpace init end (Real time : 0s)
+[EFX-0000 INFO] ... Mapping design "top_soc"
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "reset_synchronizer" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "reset_synchronizer" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "InstructionCache_3_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "InstructionCache_3_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "DataCache_3_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "DataCache_3_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BufferCC_10_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BufferCC_10_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "EfxCPUSp1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "EfxCPUSp1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "EfxCPUSp2_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "EfxCPUSp2_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "VexRiscv_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'memory_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_memory_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_memory_to_writeBack_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_memory_to_writeBack_FPU_OPCODE_1_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'execute_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_execute_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_execute_to_memory_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_execute_to_memory_FPU_OPCODE_1_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_to_execute_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_to_execute_FPU_OPCODE_1_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'writeBack_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_writeBack_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'decode_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_FPU_OPCODE_1_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'FpuPlugin_port_cmd_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'FpuPlugin_port_commit_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_FPU_OPCODE_2_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'writeBack_FpuPlugin_commit_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'writeBack_FpuPlugin_commit_s2mPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'writeBack_FpuPlugin_commit_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_writeBack_FpuPlugin_commit_s2mPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'decode_to_execute_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'execute_to_memory_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'memory_to_writeBack_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "VexRiscv_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 2s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "VexRiscv_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'memory_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_memory_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_memory_to_writeBack_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_memory_to_writeBack_FPU_OPCODE_1_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'execute_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_execute_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_execute_to_memory_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_execute_to_memory_FPU_OPCODE_1_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_to_execute_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_to_execute_FPU_OPCODE_1_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'writeBack_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_writeBack_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'decode_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_FPU_OPCODE_1_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'FpuPlugin_port_cmd_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'FpuPlugin_port_commit_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_FPU_OPCODE_2_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'writeBack_FpuPlugin_commit_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'writeBack_FpuPlugin_commit_s2mPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'writeBack_FpuPlugin_commit_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_writeBack_FpuPlugin_commit_s2mPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'decode_to_execute_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'execute_to_memory_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'memory_to_writeBack_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "VexRiscv_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 2s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "VexRiscv_2_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'memory_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_memory_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_memory_to_writeBack_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_memory_to_writeBack_FPU_OPCODE_1_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'execute_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_execute_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_execute_to_memory_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_execute_to_memory_FPU_OPCODE_1_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_to_execute_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_to_execute_FPU_OPCODE_1_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'writeBack_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_writeBack_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'decode_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_FPU_OPCODE_1_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'FpuPlugin_port_cmd_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'FpuPlugin_port_commit_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_FPU_OPCODE_2_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'writeBack_FpuPlugin_commit_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'writeBack_FpuPlugin_commit_s2mPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'writeBack_FpuPlugin_commit_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_writeBack_FpuPlugin_commit_s2mPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'decode_to_execute_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'execute_to_memory_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'memory_to_writeBack_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "VexRiscv_2_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 2s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "VexRiscv_3_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'memory_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_memory_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_memory_to_writeBack_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_memory_to_writeBack_FPU_OPCODE_1_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'execute_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_execute_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_execute_to_memory_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_execute_to_memory_FPU_OPCODE_1_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_to_execute_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_to_execute_FPU_OPCODE_1_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'writeBack_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_writeBack_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'decode_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_FPU_OPCODE_1_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'FpuPlugin_port_cmd_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'FpuPlugin_port_commit_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_decode_FPU_OPCODE_2_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'writeBack_FpuPlugin_commit_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'writeBack_FpuPlugin_commit_s2mPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'writeBack_FpuPlugin_commit_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_writeBack_FpuPlugin_commit_s2mPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'decode_to_execute_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'execute_to_memory_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'memory_to_writeBack_FPU_OPCODE_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "VexRiscv_3_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 2s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamFork_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_outputs_0_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_outputs_1_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamFork_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamArbiter_6_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_inputs_0_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_inputs_1_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_inputs_2_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_inputs_3_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_output_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_io_output_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamArbiter_6_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "FpuDiv_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "FpuDiv_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "FpuSqrt_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "FpuSqrt_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamArbiter_7_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamArbiter_7_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "FpuCore_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_port_0_cmd_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_port_0_commit_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_port_1_cmd_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_port_1_commit_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_port_2_cmd_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_port_2_commit_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_port_3_cmd_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_port_3_commit_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'commitFork_load_0_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'commitFork_load_1_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'commitFork_load_2_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'commitFork_load_3_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'commitFork_commit_0_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'commitFork_commit_1_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'commitFork_commit_2_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'commitFork_commit_3_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'system_fpu_logic_streamFork_5_io_outputs_1_s2mPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'system_fpu_logic_streamFork_5_io_outputs_1_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'system_fpu_logic_streamFork_6_io_outputs_1_s2mPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'system_fpu_logic_streamFork_6_io_outputs_1_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_payload_opcode_1_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'system_fpu_logic_streamFork_7_io_outputs_1_s2mPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'system_fpu_logic_streamFork_7_io_outputs_1_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_payload_opcode_2_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'system_fpu_logic_streamFork_8_io_outputs_1_s2mPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'system_fpu_logic_streamFork_8_io_outputs_1_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_payload_opcode_3_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_commitLogic_0_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'commitLogic_0_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_commitLogic_1_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'commitLogic_1_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_commitLogic_2_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'commitLogic_2_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_commitLogic_3_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'commitLogic_3_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'scheduler_0_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_port_0_cmd_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_scheduler_0_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'scheduler_0_output_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'scheduler_1_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_port_1_cmd_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_scheduler_1_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'scheduler_1_output_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'scheduler_2_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_port_2_cmd_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_scheduler_2_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'scheduler_2_output_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'scheduler_3_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'io_port_3_cmd_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_scheduler_3_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'scheduler_3_output_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'scheduler_0_output_m2sPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'scheduler_0_output_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'scheduler_1_output_m2sPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'scheduler_1_output_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'scheduler_2_output_m2sPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'scheduler_2_output_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'scheduler_3_output_m2sPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'scheduler_3_output_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'cmdArbiter_output_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'read_s0_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'read_s1_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'read_s0_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'read_output_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'decode_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'decode_shortPip_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'load_s0_filtred_0_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'load_s0_filtred_1_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'load_s0_filtred_2_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'load_s0_filtred_3_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'shortPip_input_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'decode_shortPip_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "FpuCore_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 4s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "DebugModule_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'logic_command_stateReg_string' select size : 4 output width: 112
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'logic_command_stateNext_string' select size : 4 output width: 112
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "DebugModule_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BufferCC_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BufferCC_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BufferCC_13_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BufferCC_13_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "FlowCCByToggle_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "FlowCCByToggle_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BufferCC_11_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BufferCC_11_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BufferCC_12_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BufferCC_12_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "FlowCCByToggle_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "FlowCCByToggle_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "DebugTransportModuleJtagTap_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'tap_fsm_stateNext_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'tap_fsm_state_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_tap_fsm_stateNext_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_tap_fsm_stateNext_1_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_tap_fsm_stateNext_2_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_tap_fsm_stateNext_3_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_tap_fsm_stateNext_4_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_tap_fsm_stateNext_5_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_tap_fsm_stateNext_6_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_tap_fsm_stateNext_7_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_tap_fsm_stateNext_8_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_tap_fsm_stateNext_9_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_tap_fsm_stateNext_10_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_tap_fsm_stateNext_11_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_tap_fsm_stateNext_12_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_tap_fsm_stateNext_13_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_tap_fsm_stateNext_14_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_tap_fsm_stateNext_15_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: '_zz_tap_fsm_stateNext_16_string' select size : 4 output width: 80
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "DebugTransportModuleJtagTap_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BufferCC_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BufferCC_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamFifo_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamFifo_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BufferCC_2_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BufferCC_2_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamArbiter_5_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamArbiter_5_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbArbiter_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbArbiter_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamFifo_8_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamFifo_8_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbInvalidateMonitor_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbInvalidateMonitor_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamArbiter_3_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamArbiter_3_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamArbiter_4_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamArbiter_4_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbExclusiveMonitor_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbExclusiveMonitor_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamArbiter_2_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamArbiter_2_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamFork_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamFork_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbArbiter_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbArbiter_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbDecoder_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbDecoder_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamArbiter_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamArbiter_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbArbiter_2_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbArbiter_2_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbErrorSlave_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbErrorSlave_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamArbiter_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamArbiter_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbDecoderPerSource_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbDecoderPerSource_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbOnChipRam_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbOnChipRam_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbDownSizerBridge_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbDownSizerBridge_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbUnburstify_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbUnburstify_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbUnburstify_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbUnburstify_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbDecoder_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbDecoder_1_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbClint_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbClint_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "UartCtrlTx_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "UartCtrlTx_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BufferCC_14_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BufferCC_14_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "UartCtrlRx_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "UartCtrlRx_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "UartCtrl_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "UartCtrl_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamFifo_6_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamFifo_6_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbUartCtrl_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbUartCtrl_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "TopLevel_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "TopLevel_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamFifo_4_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamFifo_4_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 1s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamFifo_5_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "StreamFifo_5_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbSpiXdrMasterCtrl_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "BmbSpiXdrMasterCtrl_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "EfxSapphireSoc_3c5c6ba8cd47460daa75b7c3d4f9b3fe" begin
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'toplevel_system_cores_0_logic_cpu_FpuPlugin_port_commit_m2sPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'toplevel_system_cores_0_logic_cpu_FpuPlugin_port_commit_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'toplevel_system_cores_1_logic_cpu_FpuPlugin_port_commit_m2sPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'toplevel_system_cores_1_logic_cpu_FpuPlugin_port_commit_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'toplevel_system_cores_2_logic_cpu_FpuPlugin_port_commit_m2sPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'toplevel_system_cores_2_logic_cpu_FpuPlugin_port_commit_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'toplevel_system_cores_3_logic_cpu_FpuPlugin_port_commit_m2sPipe_payload_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'toplevel_system_cores_3_logic_cpu_FpuPlugin_port_commit_rData_opcode_string' select size : 4 output width: 64
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "EfxSapphireSoc_3c5c6ba8cd47460daa75b7c3d4f9b3fe" end (Real time : 11s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "soc" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "soc" end (Real time : 4s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "top_soc" begin
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fabric_invalidationMonitor_logic_monitor/rspLogic_rspToSyncFiltred_s2mPipe_fifo/logic_ram' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:73366) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/sync_syncContext_history' (64 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75870) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/sync_syncContext_history' (64 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75870) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/sync_syncContext_history' (64 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75870) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/sync_syncContext_history' (64 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75870) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_0_target' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19267) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_0_hit' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19268) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_0_writes' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19269) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_1_target' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19270) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_1_hit' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19271) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_1_writes' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19272) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_2_target' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19273) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_2_hit' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19274) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_2_writes' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19275) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_3_target' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19276) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_3_hit' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19277) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_3_writes' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19278) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_riscvJtag_debug_logic_dm/logic_progbufX_mem' (64 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:14682) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_riscvJtag_debug_logic_dm/logic_dataX_readMem' (64 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:14683) because size is too small (<=64)
+[EFX-0000 INFO] ... Clock Enable Synthesis Performed on 1689 flops.
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "top_soc" end (Real time : 14s)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 1s)
+[EFX-0000 INFO] ... Flat synthesis begin
+[EFX-0000 INFO] ... Flat synthesis end (Real time : 1s)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 1s)
+[EFX-0000 INFO] ... Check and break combinational loops begin
+[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s)
+[EFX-0000 INFO] ... Sequential Optimization begin
+[EFX-0000 INFO] ... Clock Network 'io_systemClk' with 24385 loads will be considered for sequential optimization.
+[EFX-0000 INFO] ... Clock Network 'io_jtag_tck' with 235 loads will be considered for sequential optimization.
+[EFX-0000 INFO] ... Sequential Optimization deduced 1382 equivalent points.
+[EFX-0000 INFO] ... Sequential Optimization end (Real time : 99s)
+[EFX-0000 INFO] ... SOP modeling begin
+[EFX-0000 INFO] ... SOP modeling end (Real time : 1s)
+[EFX-0000 INFO] ... LUT mapping begin
+[EFX-0000 INFO] ... LS, strategy: 3, nd: 35646, ed: 119112, lv: 14, pw: 75328.29
+[EFX-0000 INFO] ... LUT mapping end (Real time : 92s)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 1s)
+[EFX-0000 INFO] ... Postmap Retiming Optimization begin
+[EFX-0000 INFO] ... Clock Network 'io_systemClk' with 24288 loads will be considered for retiming optimization.
+[EFX-0000 INFO] ... Clock Network 'io_jtag_tck' with 234 loads will be considered for retiming optimization.
+[EFX-0000 INFO] ... Performed 2 retime moves.
+[EFX-0000 INFO] ... Postmap Retiming Optimization end (Real time : 70s)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 3s)
+INFO: ***** Beginning VDB Netlist Checker ... *****
+INFO: VDB Netlist Checker took 0.888037 seconds.
+INFO: 	VDB Netlist Checker took 0.890625 seconds (approximately) in total CPU time.
+INFO: VDB Netlist Checker virtual memory usage: begin = 865.916 MB, end = 865.916 MB, delta = 0 MB
+INFO: 	VDB Netlist Checker peak virtual memory usage = 1307.25 MB
+INFO: VDB Netlist Checker resident set memory usage: begin = 830.068 MB, end = 830.128 MB, delta = 0.06 MB
+INFO: 	VDB Netlist Checker peak resident set memory usage = 1260.86 MB
+INFO: ***** Ending VDB Netlist Checker ... *****
+-- Writing netlist 'top_soc' to Verilog file 'C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow/soc.map.v' (VDB-1030)
+[EFX-0000 INFO] Resource Summary 
+[EFX-0000 INFO] =============================== 
+[EFX-0000 INFO] EFX_ADD         : 	3743
+[EFX-0000 INFO] EFX_LUT4        : 	35647
+[EFX-0000 INFO] EFX_DSP48       : 	25
+[EFX-0000 INFO] EFX_FF          : 	23740
+[EFX-0000 INFO] EFX_SRL8        : 	12
+[EFX-0000 INFO] EFX_RAM10       : 	868
+[EFX-0000 INFO] =============================== 

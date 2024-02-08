@@ -1,0 +1,315 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307.1.14 
+Compiled: Jan 19 2024.
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Titanium", Device "Ti180J484" ...
+
+***** Beginning stage netlist pre-processing ... *****
+Successfully Read in Verific binary Netlist dump file "C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow/soc.vdb".
+***** Beginning VDB Netlist Checker ... *****
+VDB Netlist Checker took 0.906597 seconds.
+	VDB Netlist Checker took 0.90625 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 183.616 MB, end = 183.616 MB, delta = 0 MB
+	VDB Netlist Checker peak virtual memory usage = 188.752 MB
+VDB Netlist Checker resident set memory usage: begin = 188.96 MB, end = 189.168 MB, delta = 0.208 MB
+	VDB Netlist Checker peak resident set memory usage = 193.472 MB
+***** Ending VDB Netlist Checker ... *****
+Reading core interface constraints from 'C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow/soc.interface.csv'.
+Successfully processed interface constraints file "C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow/soc.interface.csv".
+Found 0 constant generator nets.
+Pass 0: Swept away 0 nets with no fanout.
+Pass 0: Swept away 0 blocks with no fanout.
+Swept away 0 nets and 0 blocks in total.
+Removed 0 LUT buffers.
+Successfully created VPR logical netlist from Verific binary DataBase file "C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow/soc.vdb".
+Netlist pre-processing took 2.70234 seconds.
+	Netlist pre-processing took 2.53125 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 27.544 MB, end = 308.2 MB, delta = 280.656 MB
+	Netlist pre-processing peak virtual memory usage = 308.2 MB
+Netlist pre-processing resident set memory usage: begin = 38.572 MB, end = 309.276 MB, delta = 270.704 MB
+	Netlist pre-processing peak resident set memory usage = 309.28 MB
+***** Ending stage netlist pre-processing *****
+
+Load Global Network took 1.95176 seconds.
+	Load Global Network took 1.4375 seconds (approximately) in total CPU time.
+Load Global Network virtual memory usage: begin = 159.152 MB, end = 409.952 MB, delta = 250.8 MB
+	Load Global Network peak virtual memory usage = 560.756 MB
+Load Global Network resident set memory usage: begin = 162.548 MB, end = 363.552 MB, delta = 201.004 MB
+	Load Global Network peak resident set memory usage = 514.348 MB
+Reading C:/Efinity/2023.2/arch/.\rr_pb_hier_mapping.xml
+***** Beginning stage pre-packing ... *****
+***** Ending stage pre-packing *****
+
+***** Beginning stage packing ... *****
+	[PrepackAnalyzer] Cannot pack adder chain size=12, soc_inst/u_EfxSapphireSoc/system_fabric_exclusiveMonitor_logic/add_38/i1
+	[PrepackAnalyzer] Cannot pack adder chain size=65, soc_inst/u_EfxSapphireSoc/system_fpu_logic/add_4651/i64
+Generate proto netlist for file "C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/work_pnr\soc.net_proto" took 0.285 seconds
+Creating IO constraints file 'C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/work_pnr\soc.io_place'
+Packing took 0.709638 seconds.
+	Packing took 0.71875 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 448.8 MB, end = 509.984 MB, delta = 61.184 MB
+	Packing peak virtual memory usage = 560.756 MB
+Packing resident set memory usage: begin = 402.208 MB, end = 460.84 MB, delta = 58.632 MB
+	Packing peak resident set memory usage = 514.348 MB
+***** Ending stage packing *****
+
+***** Beginning stage packed netlist loading ... *****
+Read proto netlist file C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/work_pnr\soc.net_proto
+Read proto netlist for file "C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/work_pnr\soc.net_proto" took 0.046 seconds
+Setup net and block data structure took 1.592 seconds
+Reading core interface constraints from 'C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow/soc.interface.csv'.
+Successfully processed interface constraints file "C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow/soc.interface.csv".
+Counting 1 clocks that are not assigned to clock resources as global clocks.
+Packed netlist loading took 20.9387 seconds.
+	Packed netlist loading took 31.9531 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 509.984 MB, end = 1017.84 MB, delta = 507.86 MB
+	Packed netlist loading peak virtual memory usage = 1105.54 MB
+Packed netlist loading resident set memory usage: begin = 460.852 MB, end = 949.784 MB, delta = 488.932 MB
+	Packed netlist loading peak resident set memory usage = 1035.81 MB
+***** Ending stage packed netlist loading *****
+
+***** Beginning stage pre-placement ... *****
+
+***** Ending stage pre-placement *****
+
+Read router lookahead for device Ti180J484 from file C:/Efinity/2023.2/arch/./troute/timing/titanium/lookahead/C4.lookahead.zst.
+
+Load Router Lookahead took 0.0711329 seconds.
+	Load Router Lookahead took 0.046875 seconds (approximately) in total CPU time.
+Load Router Lookahead virtual memory usage: begin = 1058.93 MB, end = 1088.35 MB, delta = 29.42 MB
+	Load Router Lookahead peak virtual memory usage = 1141.12 MB
+Load Router Lookahead resident set memory usage: begin = 987.168 MB, end = 1005.92 MB, delta = 18.752 MB
+	Load Router Lookahead peak resident set memory usage = 1068.91 MB
+
+SDC file 'C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/constraints.sdc' parsed successfully.
+2 clocks (including virtual clocks), 2 inputs and 6 outputs were constrained.
+
+***** Beginning stage initial placement ... *****
+Reading core interface constraints from 'C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow/soc.interface.csv'.
+Successfully processed interface constraints file "C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow/soc.interface.csv".
+Writing IO placement constraints to 'C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow\soc.interface.io'.
+
+Reading placement constraints from 'C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow\soc.interface.io'.
+
+Reading placement constraints from 'C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/work_pnr\soc.io_place'.
+***** Ending stage initial placement *****
+
+***** Beginning stage placement ... *****
+Found 87 synchronizers as follows: 
+	Synchronizer 0:  soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/systemCd_logic_outputReset_buffercc/i7_2
+	Synchronizer 1:  soc_inst/u_EfxSapphireSoc/toplevel_system_cores_3_logic_cpu_stoptime_buffercc/i7_2
+	Synchronizer 2:  soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1/rx/io_rxd_buffercc/buffers_0~FF soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1/rx/io_rxd_buffercc_io_dataOut~FF
+	Synchronizer 3:  soc_inst/u_EfxSapphireSoc/bufferCC_16/buffers_0~FF soc_inst/u_EfxSapphireSoc/bufferCC_16_io_dataOut~FF
+	Synchronizer 4:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_address[6]~FF
+	Synchronizer 5:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_address[5]~FF
+	Synchronizer 6:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_address[4]~FF
+	Synchronizer 7:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_address[3]~FF
+	Synchronizer 8:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_address[2]~FF
+	Synchronizer 9:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_address[1]~FF
+	Synchronizer 10:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[31]~FF
+	Synchronizer 11:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[30]~FF
+	Synchronizer 12:  soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/systemCd_logic_outputReset_buffercc/i7_2
+	Synchronizer 13:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[29]~FF
+	Synchronizer 14:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[28]~FF
+	Synchronizer 15:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[27]~FF
+	Synchronizer 16:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[26]~FF
+	Synchronizer 17:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[25]~FF
+	Synchronizer 18:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[24]~FF
+	Synchronizer 19:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[23]~FF
+	Synchronizer 20:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[22]~FF
+	Synchronizer 21:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[21]~FF
+	Synchronizer 22:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[20]~FF
+	Synchronizer 23:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[19]~FF
+	Synchronizer 24:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[18]~FF
+	Synchronizer 25:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[17]~FF
+	Synchronizer 26:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[16]~FF
+	Synchronizer 27:  soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/systemCd_logic_outputReset_buffercc/i7_2
+	Synchronizer 28:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[15]~FF
+	Synchronizer 29:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[14]~FF
+	Synchronizer 30:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[13]~FF
+	Synchronizer 31:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[12]~FF
+	Synchronizer 32:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[11]~FF
+	Synchronizer 33:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[10]~FF
+	Synchronizer 34:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[9]~FF
+	Synchronizer 35:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[8]~FF
+	Synchronizer 36:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[7]~FF
+	Synchronizer 37:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[6]~FF
+	Synchronizer 38:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[5]~FF
+	Synchronizer 39:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[4]~FF
+	Synchronizer 40:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[16]~FF
+	Synchronizer 41:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[3]~FF
+	Synchronizer 42:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[15]~FF
+	Synchronizer 43:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[2]~FF
+	Synchronizer 44:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[14]~FF
+	Synchronizer 45:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_address[0]~FF
+	Synchronizer 46:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[21]~FF
+	Synchronizer 47:  soc_inst/u_EfxSapphireSoc/bufferCC_17/buffers_0~FF soc_inst/u_EfxSapphireSoc/bufferCC_17_io_dataOut~FF
+	Synchronizer 48:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[1]~FF
+	Synchronizer 49:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[13]~FF
+	Synchronizer 50:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle/inputArea_target_buffercc/buffers_0~FF soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle/inputArea_target_buffercc_io_dataOut~FF
+	Synchronizer 51:  soc_inst/u_EfxSapphireSoc/toplevel_system_cores_1_logic_cpu_stoptime_buffercc/i7_2
+	Synchronizer 52:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[29]~FF
+	Synchronizer 53:  soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/systemCd_logic_outputReset_buffercc/i7_2
+	Synchronizer 54:  soc_inst/u_EfxSapphireSoc/toplevel_system_cores_2_logic_cpu_stoptime_buffercc/i7_2
+	Synchronizer 55:  soc_inst/u_EfxSapphireSoc/bufferCC_15/buffers_0~FF soc_inst/u_EfxSapphireSoc/bufferCC_15_io_dataOut~FF
+	Synchronizer 56:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[30]~FF
+	Synchronizer 57:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[23]~FF
+	Synchronizer 58:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[0]~FF
+	Synchronizer 59:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle/bufferCC_15/buffers_0~FF soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle/bufferCC_15_io_dataOut~FF
+	Synchronizer 60:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_jtagLogic_dmiCmd_ccToggle/inputArea_target_buffercc/i7_2
+	Synchronizer 61:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[27]~FF
+	Synchronizer 62:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[0]~FF
+	Synchronizer 63:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[20]~FF
+	Synchronizer 64:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[17]~FF
+	Synchronizer 65:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_write~FF
+	Synchronizer 66:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[18]~FF
+	Synchronizer 67:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[19]~FF
+	Synchronizer 68:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[22]~FF
+	Synchronizer 69:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[24]~FF
+	Synchronizer 70:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[25]~FF
+	Synchronizer 71:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[26]~FF
+	Synchronizer 72:  soc_inst/u_EfxSapphireSoc/toplevel_system_cores_0_logic_cpu_stoptime_buffercc/i7_2
+	Synchronizer 73:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[28]~FF
+	Synchronizer 74:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap/logic_systemLogic_bus_rsp_ccToggle_io_output_payload_data[31]~FF
+	Synchronizer 75:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[1]~FF
+	Synchronizer 76:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[2]~FF
+	Synchronizer 77:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[3]~FF
+	Synchronizer 78:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[4]~FF
+	Synchronizer 79:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[5]~FF
+	Synchronizer 80:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[6]~FF
+	Synchronizer 81:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[7]~FF
+	Synchronizer 82:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[8]~FF
+	Synchronizer 83:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[9]~FF
+	Synchronizer 84:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[10]~FF
+	Synchronizer 85:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[11]~FF
+	Synchronizer 86:  soc_inst/u_EfxSapphireSoc/system_riscvJtag_soft_tap_tap_io_bus_cmd_payload_data[12]~FF
+Create C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow\soc_after_qp.qdelay
+QPLACER STATIC DB USAGE DISABLED
+Starting Global Placer with 2 threads ...
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL Worst Slack (ps) Convergence
+ ----------     -------  --------------     -------
+          1   119868424            1024         0.2%
+          2    56891220            1097         0.6%
+          3    35715712             822         1.6%
+          4    16478716             633         7.6%
+          5     7359476           -1022        22.4%
+          6     4803515           -1806        41.5%
+          7     4259768           -2113        55.7%
+          8     4263873           -2585        55.7%
+          9     4193669           -2233        60.6%
+         10     4237433           -1854        61.2%
+         11     4228132           -1664        63.2%
+         12     4252135           -1515        66.3%
+         13     4341565           -1280        66.3%
+         14     4226205           -1443        70.3%
+         15     4196415           -1529        71.4%
+         16     4104814           -1434        71.4%
+         17     4022934           -1393        72.8%
+         18     4025689           -1485        73.0%
+         19     4014361           -1460        73.0%
+         20     3981304           -1608        77.8%
+         21     4112539           -1586        77.8%
+         22     4025465           -1433        77.8%
+         23     4035302           -1604        77.8%
+         24     4043614           -1306        77.8%
+         25     3994479           -1347        77.8%
+         26     4007486           -1314        77.8%
+         27     3943917           -1164        80.6%
+         28     4016490           -1286        80.6%
+         29     3991095           -1297        80.6%
+         30     3965083           -1548        80.6%
+         31     3922074           -1429        82.7%
+         32     3963186           -1206        82.7%
+         33     3957509           -1192        82.7%
+         34     4024785           -1603        82.7%
+         35     3905895           -1361        85.2%
+         36     3941850           -1730        85.2%
+         37     3859799           -1491        89.1%
+         38     3856389           -1624        89.1%
+         39     3832314           -1559        90.0%
+         40     3855405           -1451        90.0%
+         41     3817400           -1687        90.6%
+         42     3833727           -1411        90.6%
+         43     3833630           -1866        90.6%
+         44     3945513           -1518        90.6%
+         45     3792615           -1598        92.5%
+         46     3796324           -1706        92.5%
+         47     3880113           -1587        92.5%
+         48     3772764           -1570        94.1%
+         49     3778804           -1589        94.1%
+         50     3785076           -1580        94.1%
+         51     3759179           -1689        95.2%
+         52     3736663           -1604        95.2%
+         53     3727235           -1520        96.1%
+         54     3728906           -1684        96.8%
+         55     3737516           -1701        97.4%
+         56     3745256           -1405        98.0%
+         57     3758189           -1544        98.4%
+         58     3764514           -1592        99.0%
+Starting Annealer
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps)     R Limit
+ ----------     -------  --------------     -------
+          0     3745256            6571        30.0
+          1     3497692            6088        28.5
+          2     3318184            5607        26.7
+          3     3167590            5301        24.8
+          4     3094837            5175        22.9
+          5     3035051            5150        21.1
+          6     2980775            5111        19.3
+          7     2945433            5260        17.7
+          8     2912583            5048        16.1
+          9     2883727            5126        14.7
+         10     2861499            5071        13.4
+         11     2841482            5126        12.1
+         12     2819454            5064        11.0
+         13     2800646            5009        10.0
+         14     2780624            4925         9.1
+         15     2765350            5102         8.2
+         16     2751582            5105         7.5
+         17     2736778            5160         6.8
+         18     2724780            5051         6.1
+         19     2712683            5106         5.5
+         20     2701563            5004         5.0
+         21     2691399            5044         4.5
+         22     2681158            4952         4.1
+         23     2673543            4952         3.7
+         24     2667212            4952         3.3
+         25     2663307            4952         3.0
+         26     2659835            4936         2.7
+         27     2655250            4936         2.5
+         28     2653365            4936         2.2
+         29     2649014            4936         2.0
+         30     2646152            4936         1.8
+         31     2644735            4936         1.6
+         32     2641839            4991         1.5
+Generate C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow\soc_after_qp.qdelay
+Placement successful: 53565 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.582925 at 86,160
+Congestion-weighted HPWL per net: 37.8681
+
+Reading placement constraints from 'C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow/soc.qplace'.
+Finished Realigning Types (8788 blocks needed type change)
+Run checks after placement.
+
+Completed placement consistency check successfully.
+Successfully created FPGA place file 'C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow/soc.place'
+Placement took 395.89 seconds.
+	Placement took 701.453 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 1088.35 MB, end = 1254.64 MB, delta = 166.292 MB
+	Placement peak virtual memory usage = 2348.44 MB
+Placement resident set memory usage: begin = 1005.92 MB, end = 1165.04 MB, delta = 159.112 MB
+	Placement peak resident set memory usage = 2183.34 MB
+***** Ending stage placement *****
+

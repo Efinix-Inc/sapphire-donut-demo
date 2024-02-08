@@ -1,0 +1,123 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307.1.14 
+Compiled: Jan 19 2024.
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Titanium", Device "Ti180J484" ...
+
+***** Beginning stage routing ... *****
+
+SDC file 'C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/constraints.sdc' parsed successfully.
+2 clocks (including virtual clocks), 2 inputs and 6 outputs were constrained.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Router Setup
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[Setup Parallel Routing Scheduler]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Route Circuit with 2 threads
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CSS enabled! Optimizing clock skews ... 
+Non-legalized beneficial skew improved geomean CPD by 6.76% (from 5042ps to 4701ps)
+CSS improved CPD of clock io_systemClk by 5.83% (from 5042ps to 4748ps)
+Discretized beneficial skew improved geomean CPD by 5.83% (from 5042ps to 4748ps in 6 iterations and 3.8 sec)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Iter  1: overlap=165462  heapops=17103302   (0%) cpd=4748  frr=1.00  msec=16327
+[Setup Delay Budgets | 2405.0 ms]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hold Fixing
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Total min wire delay:  14317329
+Hold fix wire delay:        267
+Hold fix delay ratio:     0.00%
+Pins requiring hold fix:  0.00%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Iter  2: overlap=54290   heapops=17593873   (24%) cpd=4722  frr=0.99  msec=5232
+Iter  3: overlap=23759   heapops=13656837   (52%) cpd=4728  frr=1.00  msec=4342
+Iter  4: overlap=8719    heapops=9101643    (73%) cpd=4726  frr=1.00  msec=3436
+Iter  5: overlap=2937    heapops=5344590    (85%) cpd=4726  frr=1.00  msec=2850
+WARNING(1): Oversized routing heap detected
+Iter  6: overlap=1031    heapops=3612010    (90%) cpd=4724  frr=0.99  msec=2784
+Iter  7: overlap=339     heapops=2718381    (92%) cpd=4731  frr=1.00  msec=2854
+[Rebuild Parallel Routing Scheduler]
+Iter  8: overlap=103     heapops=1555688    (92%) cpd=4731  frr=1.00  msec=3345
+Iter  9: overlap=27      heapops=1412039    (93%) cpd=4731  frr=1.00  msec=2455
+Iter 10: overlap=4       heapops=633773     (93%) cpd=4760  frr=1.00  msec=2051
+Iter 11: overlap=1       heapops=274314     (93%) cpd=4731  frr=1.00  msec=1576
+Iter 12: overlap=0       heapops=268867     (93%) cpd=4731  frr=1.00  msec=1565
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Routing Result
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Routing Succeeded in 52.97 seconds taking 12 iterations! 
+
+First iteration critical path delay = 4.748 ns 
+Last iteration critical path delay  = 4.731 ns (ratio = 1.00)
+Max Routing Heap Size = 100,006
+Routing trace written to file 'C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow/soc.troutingtraces' 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Routing took 63.9999 seconds.
+	Routing took 106.828 seconds (approximately) in total CPU time.
+Routing virtual memory usage: begin = 1254.64 MB, end = 3092 MB, delta = 1837.36 MB
+	Routing peak virtual memory usage = 3243.67 MB
+Routing resident set memory usage: begin = 1165.04 MB, end = 2815.48 MB, delta = 1650.44 MB
+	Routing peak resident set memory usage = 2966.01 MB
+***** Ending stage routing *****
+
+***** Beginning stage final timing analysis ... *****
+
+SDC file 'C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/constraints.sdc' parsed successfully.
+2 clocks (including virtual clocks), 2 inputs and 6 outputs were constrained.
+
+Maximum possible analyzed clocks frequency
+ Clock Name  Period (ns)  Frequency (MHz)     Edge
+io_systemClk    4.841        206.569         (R-R)
+io_jtag_tck     3.980        251.256         (R-F)
+
+Geomean max period: 4.389
+
+Setup (Max) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+  io_systemClk     io_systemClk         5.000            0.159           (R-R)
+  io_jtag_tck      io_jtag_tck        100.000           97.171           (R-R)
+  io_jtag_tck      io_jtag_tck         50.000           48.010           (R-F)
+
+Hold (Min) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+  io_systemClk     io_systemClk         0.000            0.030           (R-R)
+  io_jtag_tck      io_jtag_tck          0.000            0.035           (R-R)
+  io_jtag_tck      io_jtag_tck        -50.000           50.121           (R-F)
+
+Write Timing Report to "C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow\soc.timing.rpt" ...
+final timing analysis took 8.41622 seconds.
+	final timing analysis took 8.51562 seconds (approximately) in total CPU time.
+final timing analysis virtual memory usage: begin = 3093.53 MB, end = 3461.84 MB, delta = 368.312 MB
+	final timing analysis peak virtual memory usage = 3487.75 MB
+final timing analysis resident set memory usage: begin = 2817.13 MB, end = 3145.64 MB, delta = 328.512 MB
+	final timing analysis peak resident set memory usage = 3171.08 MB
+***** Ending stage final timing analysis *****
+
+***** Beginning stage bitstream generation ... *****
+Reading core interface constraints from 'C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow/soc.interface.csv'.
+Successfully processed interface constraints file "C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow/soc.interface.csv".
+Finished writing bitstream file C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/work_pnr\soc.lbf.
+Bitstream generation took 14.0411 seconds.
+	Bitstream generation took 13.6719 seconds (approximately) in total CPU time.
+Bitstream generation virtual memory usage: begin = 3461.84 MB, end = 3966.55 MB, delta = 504.712 MB
+	Bitstream generation peak virtual memory usage = 4191.91 MB
+Bitstream generation resident set memory usage: begin = 3145.67 MB, end = 3636.78 MB, delta = 491.108 MB
+	Bitstream generation peak resident set memory usage = 3796.22 MB
+***** Ending stage bitstream generation *****
+
+The entire flow of EFX_PNR took 524.192 seconds.
+	The entire flow of EFX_PNR took 880.812 seconds (approximately) in total CPU time.
+The entire flow of EFX_PNR virtual memory usage: begin = 5.592 MB, end = 2065.3 MB, delta = 2059.7 MB
+	The entire flow of EFX_PNR peak virtual memory usage = 4191.91 MB
+The entire flow of EFX_PNR resident set memory usage: begin = 12.632 MB, end = 1852.66 MB, delta = 1840.03 MB
+	The entire flow of EFX_PNR peak resident set memory usage = 3796.22 MB

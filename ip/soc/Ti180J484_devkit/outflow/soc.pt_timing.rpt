@@ -1,0 +1,75 @@
+
+Efinity Interface Designer Timing Report
+Version: 2023.2.307.1.14
+Date: 2024-02-08 11:48
+
+Copyright (C) 2013 - 2023 Efinix Inc. All rights reserved.
+
+Device: Ti180J484
+Project: soc
+Timing Model: C4 (final)
+
+---------- 1. PLL Timing Report (begin) ----------
+
++--------------+----------+-----------------+--------------------------+---------+-------------------+---------------------------------+---------------------------------+
+| PLL Instance | Resource | Reference Clock | Core Clock Reference Pin | FB Mode | Core Feedback Pin | PLL Compensation Delay Max (ns) | PLL Compensation Delay Min (ns) |
++--------------+----------+-----------------+--------------------------+---------+-------------------+---------------------------------+---------------------------------+
+|   main_pll   | PLL_BL1  |     external    |                          |  local  |                   |              0.000              |              0.000              |
++--------------+----------+-----------------+--------------------------+---------+-------------------+---------------------------------+---------------------------------+
+
++----------------+-------------+----------------------------+-----------------------+----------+
+|     Clock      | Period (ns) | Enable Dynamic Phase Shift | Phase Shift (degrees) | Inverted |
++----------------+-------------+----------------------------+-----------------------+----------+
+| pll_fb_CLKOUT0 |   20.0000   |           False            |          0.0          |  false   |
+|  io_systemClk  |    5.0000   |           False            |          0.0          |  false   |
++----------------+-------------+----------------------------+-----------------------+----------+
+
+---------- PLL Timing Report (end) ----------
+
+---------- 2. GPIO Timing Report (begin) ----------
+
+Non-registered GPIO Configuration:
+===================================
+
++----------------------+----------------------+-----------+----------+----------+
+|    Instance Name     |       Pin Name       | Parameter | Max (ns) | Min (ns) |
++----------------------+----------------------+-----------+----------+----------+
+|    ddr_pll_refclk    |    ddr_pll_refclk    |  GPIO_IN  |  1.907   |  1.271   |
+|     io_jtag_tck      |     io_jtag_tck      |  GPIO_IN  |  1.907   |  1.271   |
+|     io_jtag_tdi      |     io_jtag_tdi      |  GPIO_IN  |  1.907   |  1.271   |
+|     io_jtag_tms      |     io_jtag_tms      |  GPIO_IN  |  1.907   |  1.271   |
+| system_uart_0_io_rxd | system_uart_0_io_rxd |  GPIO_IN  |  1.907   |  1.271   |
+|     io_jtag_tdo      |     io_jtag_tdo      |  GPIO_OUT |  4.740   |  2.493   |
+| system_uart_0_io_txd | system_uart_0_io_txd |  GPIO_OUT |  4.824   |  2.549   |
++----------------------+----------------------+-----------+----------+----------+
+
+---------- GPIO Timing Report (end) ----------
+
+---------- 3.1 HSIO GPIO Timing Report (begin) ----------
+
+Non-registered HSIO GPIO Configuration:
+========================================
+
++-------------------+-------------------+-----------+----------+----------+
+|   Instance Name   |      Pin Name     | Parameter | Max (ns) | Min (ns) |
++-------------------+-------------------+-----------+----------+----------+
+| io_asyncResetn_in | io_asyncResetn_in |  GPIO_IN  |  0.828   |  0.552   |
+|     io_clk_rst    |     io_clk_rst    |  GPIO_IN  |  0.828   |  0.552   |
+|     my_pll_clk    |     my_pll_clk    |  GPIO_IN  |  0.828   |  0.552   |
++-------------------+-------------------+-----------+----------+----------+
+
+Registered HSIO GPIO Configuration:
+====================================
+
++----------------------------+--------------+----------------+----------------+---------------+---------------+-----------------------+-----------------------+
+|       Instance Name        |  Clock Pin   | Max Setup (ns) | Min Setup (ns) | Max Hold (ns) | Min Hold (ns) | Max Clock To Out (ns) | Min Clock To Out (ns) |
++----------------------------+--------------+----------------+----------------+---------------+---------------+-----------------------+-----------------------+
+| system_spi_0_io_sclk_write | io_systemClk |                |                |               |               |         2.226         |         1.484         |
+|     system_spi_0_io_ss     | io_systemClk |                |                |               |               |         2.226         |         1.484         |
+|   system_spi_0_io_data_0   | io_systemClk |     0.618      |     0.412      |     -0.408    |     -0.272    |                       |                       |
+|   system_spi_0_io_data_0   | io_systemClk |                |                |               |               |         2.226         |         1.302         |
+|   system_spi_0_io_data_1   | io_systemClk |     0.618      |     0.412      |     -0.408    |     -0.272    |                       |                       |
+|   system_spi_0_io_data_1   | io_systemClk |                |                |               |               |         2.226         |         1.302         |
++----------------------------+--------------+----------------+----------------+---------------+---------------+-----------------------+-----------------------+
+
+---------- HSIO GPIO Timing Report (end) ----------

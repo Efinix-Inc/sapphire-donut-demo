@@ -1,0 +1,96 @@
+
+---------- Resource Summary (begin) ----------
+Inputs: 9 / 3706 (0.24%)
+Outputs: 15 / 4655 (0.32%)
+Global Clocks (GBUF): 2 / 32 (6.25%)
+Regional Clocks (RBUF): 0 / 48 (0.00%)
+	RBUF: Core: 0 / 32 (0.00%)
+	RBUF: Periphery: 0 / 8 (0.00%)
+	RBUF: Multi-Region: 0 / 8 (0.00%)
+XLRs: 57224 / 172800 (33.12%)
+	XLRs needed for Logic: 26490 / 172800 (15.33%)
+	XLRs needed for Logic + FF: 9159 / 172800 (5.30%)
+	XLRs needed for Adder: 2430 / 172800 (1.41%)
+	XLRs needed for Adder + FF: 1313 / 172800 (0.76%)
+	XLRs needed for FF: 13268 / 172800 (7.68%)
+	XLRs needed for SRL8: 12 / 32000 (0.04%)
+	XLRs needed for SRL8+FF: 0 / 32000 (0.00%)
+	XLRs needed for Routing: 4552 / 172800 (2.63%)
+Memory Blocks: 868 / 1280 (67.81%)
+DSP Blocks: 25 / 640 (3.91%)
+---------- Resource Summary (end) ----------
+
+
+---------- DSP Packer Summary (begin) ----------
+
+	DSP48 blocks required to legally pack design: 25
+	DSP48 blocks recoverable by optimizing:
+		-> DSP24/12 control signals & parameters: 0
+	Best case scenario DSP count after optimizing: 25
+
+---------- DSP Packer Summary (end) ----------
+
+
+
+---------- GBUFCE Assignments (begin) ----------
+
+
++--------------+----------+----------+
+|  Clock Net   | GBUFCE_X | GBUFCE_Y |
++--------------+----------+----------+
+| io_jtag_tck  |   164    |   642    |
+| io_systemClk |   170    |    1     |
++--------------+----------+----------+
+
+
+----------- GBUFCE Assignments (end) ----------
+
+
+
+---------- Resource Summary (begin) ----------
+Inputs: 9 / 3706 (0.24%)
+Outputs: 15 / 4655 (0.32%)
+Global Clocks (GBUF): 2 / 32 (6.25%)
+Regional Clocks (RBUF): 0 / 48 (0.00%)
+	RBUF: Core: 0 / 32 (0.00%)
+	RBUF: Periphery: 0 / 8 (0.00%)
+	RBUF: Multi-Region: 0 / 8 (0.00%)
+XLRs: 57224 / 172800 (33.12%)
+	XLRs needed for Logic: 26490 / 172800 (15.33%)
+	XLRs needed for Logic + FF: 9159 / 172800 (5.30%)
+	XLRs needed for Adder: 2430 / 172800 (1.41%)
+	XLRs needed for Adder + FF: 1313 / 172800 (0.76%)
+	XLRs needed for FF: 13268 / 172800 (7.68%)
+	XLRs needed for SRL8: 12 / 32000 (0.04%)
+	XLRs needed for SRL8+FF: 0 / 32000 (0.00%)
+	XLRs needed for Routing: 4552 / 172800 (2.63%)
+Memory Blocks: 868 / 1280 (67.81%)
+DSP Blocks: 25 / 640 (3.91%)
+---------- Resource Summary (end) ----------
+
+
+---------- DSP Packer Summary (begin) ----------
+
+	DSP48 blocks required to legally pack design: 25
+	DSP48 blocks recoverable by optimizing:
+		-> DSP24/12 control signals & parameters: 0
+	Best case scenario DSP count after optimizing: 25
+
+---------- DSP Packer Summary (end) ----------
+
+
+
+---------- GBUFCE Assignments (begin) ----------
+
+
++--------------+----------+----------+
+|  Clock Net   | GBUFCE_X | GBUFCE_Y |
++--------------+----------+----------+
+| io_jtag_tck  |   164    |   642    |
+| io_systemClk |   170    |    1     |
++--------------+----------+----------+
+
+
+----------- GBUFCE Assignments (end) ----------
+
+

@@ -1,0 +1,224 @@
+route {
+  driver {
+    cell: "pt_input_flop_1"
+    port: "Q"
+  }
+  sink {
+    cell: "system_spi_0_io_data_1_read"
+    port: "IN"
+  }
+  delay: 0
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "pt_input_flop_0"
+    port: "Q"
+  }
+  sink {
+    cell: "system_spi_0_io_data_0_read"
+    port: "IN"
+  }
+  delay: 0
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_systemClk~CLKOUT~78~1"
+    port: "OUT"
+  }
+  sink {
+    cell: "pt_output_flop_7"
+    port: "CLK"
+  }
+  delay: -263
+  delay_min: 140
+  delay_max: -263
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_systemClk~CLKOUT~88~1"
+    port: "OUT"
+  }
+  sink {
+    cell: "pt_output_flop_5"
+    port: "CLK"
+  }
+  delay: -263
+  delay_min: 140
+  delay_max: -263
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_systemClk~CLKOUT~88~1"
+    port: "OUT"
+  }
+  sink {
+    cell: "pt_output_flop_6"
+    port: "CLK"
+  }
+  delay: -263
+  delay_min: 140
+  delay_max: -263
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_systemClk~CLKOUT~87~1"
+    port: "OUT"
+  }
+  sink {
+    cell: "pt_output_flop_3"
+    port: "CLK"
+  }
+  delay: -263
+  delay_min: 140
+  delay_max: -263
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_systemClk~CLKOUT~87~1"
+    port: "OUT"
+  }
+  sink {
+    cell: "pt_output_flop_4"
+    port: "CLK"
+  }
+  delay: -263
+  delay_min: 140
+  delay_max: -263
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_systemClk~CLKOUT~18~1"
+    port: "OUT"
+  }
+  sink {
+    cell: "pt_output_flop_2"
+    port: "CLK"
+  }
+  delay: -263
+  delay_min: 140
+  delay_max: -263
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_systemClk~CLKOUT~86~1"
+    port: "OUT"
+  }
+  sink {
+    cell: "pt_input_flop_1"
+    port: "CLK"
+  }
+  delay: 414
+  delay_min: 276
+  delay_max: 414
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "io_systemClk~CLKOUT~85~1"
+    port: "OUT"
+  }
+  sink {
+    cell: "pt_input_flop_0"
+    port: "CLK"
+  }
+  delay: 414
+  delay_min: 276
+  delay_max: 414
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "system_spi_0_io_ss"
+    port: "OUT"
+  }
+  sink {
+    cell: "pt_output_flop_7"
+    port: "D"
+  }
+  delay: 0
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "system_spi_0_io_data_1_write"
+    port: "OUT"
+  }
+  sink {
+    cell: "pt_output_flop_6"
+    port: "D"
+  }
+  delay: 0
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "system_spi_0_io_data_1_writeEnable"
+    port: "OUT"
+  }
+  sink {
+    cell: "pt_output_flop_5"
+    port: "D"
+  }
+  delay: 0
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "system_spi_0_io_data_0_write"
+    port: "OUT"
+  }
+  sink {
+    cell: "pt_output_flop_4"
+    port: "D"
+  }
+  delay: 0
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "system_spi_0_io_data_0_writeEnable"
+    port: "OUT"
+  }
+  sink {
+    cell: "pt_output_flop_3"
+    port: "D"
+  }
+  delay: 0
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}
+route {
+  driver {
+    cell: "system_spi_0_io_sclk_write"
+    port: "OUT"
+  }
+  sink {
+    cell: "pt_output_flop_2"
+    port: "D"
+  }
+  delay: 0
+  delay_min: 0
+  delay_max: 0
+  type: FIXED_NET_DELAY
+}

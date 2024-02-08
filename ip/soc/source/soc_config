@@ -1,0 +1,24 @@
+--ramHex "C:\Efinity\2023.2\project\sapphire_donut_demo\donutDemo.hex"
+--iCacheWays 8
+--spi name=system_spi_0_io,address=0x014000,interruptId=4,width=8,ssCount=1
+--cpuCount 4
+--withRiscvDebugPriv
+--hardwareBreakpoints 0
+--ddrAEnable false
+--Fpu true
+--Linux true
+--apbBridgeAddress 0xf8000000
+--PeripheralClock false
+--iCacheSize 32768
+--L1D true
+--customInstruction false
+--onChipRamSize 0x40000
+--softTap true
+--Compressed true
+--dCacheSize 32768
+--onChipRamAddress 0xf9000000
+--systemFrequency 200000000
+--dCacheWays 8
+--axiAEnable false
+--uart name=system_uart_0_io,address=0x010000,interruptId=1
+--L1I true

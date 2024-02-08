@@ -1,0 +1,497 @@
+
+# Efinity Pinout Report
+# Version: 2023.2.307.1.14
+# Date: 2024-02-08 11:48
+
+# Copyright (C) 2013 - 2023 Efinix Inc. All rights reserved.
+
+# Device: Ti180J484
+# Package status: final
+# Project: soc
+# Configuration mode: active (x1)
+
+Pin Number,Pin Name,Signal Name,Direction,Bank,I/O Bank Voltage,I/O Standard,Pull Type,Function
+A1,GND,,Power,,,,,Ground
+A2,GPIOB_N_12_SSU_N,,,4B,1.8 V,,,User IO/PLL_EXTFB/Configuration
+A3,GPIOB_N_16_CLK3_N,,,4B,1.8 V,,,User IO/GCLK
+A4,GPIOB_P_16_EXTSPICLK_CLK3_P,,,4B,1.8 V,,,User IO/GCLK/VREF/Configuration
+A5,GPIOB_N_21_CDI8,,,4B,1.8 V,,,User IO
+A6,GPIOB_P_21_CDI9,,,4B,1.8 V,,,User IO
+A7,GPIOB_N_25_CDI14,,,4A,1.8 V,,,User IO
+A8,GPIOB_P_25_CDI15,,,4A,1.8 V,,,User IO
+A9,GPIOB_N_28_CDI20,,,4A,1.8 V,,,User IO
+A10,GPIOB_P_28_CDI21,,,4A,1.8 V,,,User IO/VREF
+A11,GPIOB_P_32_CDI28,,,4A,1.8 V,,,User IO/RCLK
+A12,GPIOB_N_32_CDI29,,,4A,1.8 V,,,User IO/RCLK
+A13,GPIOR_N_16,,,3B_3C,1.8 V,,,User IO/PLL_CLKIN
+A14,GPIOR_P_16_PLLIN1,,,3B_3C,1.8 V,,,User IO/PLL_CLKIN
+A15,GPIOR_P_23_CLK12_P,,,3B_3C,1.8 V,,,User IO/GCLK/VREF
+A16,GPIOR_N_23_CLK12_N,,,3B_3C,1.8 V,,,User IO/GCLK
+A17,GPIOR_P_26_CLK9_P,,,3B_3C,1.8 V,,,User IO/GCLK
+A18,GPIOR_P_31_PLLIN1,,,3B_3C,1.8 V,,,User IO/PLL_CLKIN
+A19,GPIOR_N_31,,,3B_3C,1.8 V,,,User IO/PLL_CLKIN
+A20,GPIOR_N_42,,,3A,1.8 V,,,User IO
+A21,GPIOR_P_42,,,3A,1.8 V,,,User IO
+A22,GND,,Power,,,,,Ground
+AA1,DDR_DQ[26],,,DDR,,,,
+AA2,GND,,Power,,,,,Ground
+AA3,DDR_DQ[25],,,DDR,,,,
+AA4,GND,,Power,,,,,Ground
+AA5,DDR_DQS[2],,,DDR,,,,
+AA6,GND,,Power,,,,,Ground
+AA7,VDDQ_PHY,,Power,DDR,,,,
+AA8,GND,,Power,,,,,Ground
+AA9,NC,,,,,,,
+AA10,GND,,Power,,,,,Ground
+AA11,VDDQ_PHY,,Power,DDR,,,,
+AA12,GND,,Power,,,,,Ground
+AA13,DDR_CK_N,,,DDR,,,,
+AA14,GND,,Power,,,,,Ground
+AA15,VDDQ_PHY,,Power,DDR,,,,
+AA16,GND,,Power,,,,,Ground
+AA17,DDR_DQ[14],,,DDR,,,,
+AA18,GND,,Power,,,,,Ground
+AA19,DDR_DM[1],,,DDR,,,,
+AA20,GND,,Power,,,,,Ground
+AA21,DDR_DQ[6],,,DDR,,,,
+AA22,GND,,Power,,,,,Ground
+AB1,GND,,Power,,,,,Ground
+AB2,DDR_DQ[20],,,DDR,,,,
+AB3,DDR_DQ[19],,,DDR,,,,
+AB4,DDR_DM[2],,,DDR,,,,
+AB5,DDR_DQ[18],,,DDR,,,,
+AB6,DDR_DQ[16],,,DDR,,,,
+AB7,DDR_A[4],,,DDR,,,,
+AB8,DDR_A[2],,,DDR,,,,
+AB9,NC,,,,,,,
+AB10,DDR_A[1],,,DDR,,,,
+AB11,NC,,,,,,,
+AB12,NC,,,,,,,
+AB13,DDR_CK,,,DDR,,,,
+AB14,DDR_CAL,,,DDR,,,,
+AB15,DDR_CKE[0],,,DDR,,,,
+AB16,DDR_RST_N,,,DDR,,,,
+AB17,DDR_CKE[1],,,DDR,,,,
+AB18,DDR_DQ[15],,,DDR,,,,
+AB19,DDR_DQ[12],,,DDR,,,,
+AB20,DDR_DQS_N[1],,,DDR,,,,
+AB21,DDR_DQS[1],,,DDR,,,,
+AB22,GND,,Power,,,,,Ground
+B1,GPIOB_N_11,,,4B,1.8 V,,,User IO/PLL_CLKIN
+B2,GPIOB_P_12_EXTFB,,,4B,1.8 V,,,User IO/PLL_EXTFB
+B3,GPIOB_N_15_CLK2_N,,,4B,1.8 V,,,User IO/GCLK
+B4,VCCIO4B,,Power,4B,1.8 V,,,VCCIO Power
+B5,GPIOB_P_20_CDI6_CLK7_P,,,4B,1.8 V,,,User IO/GCLK
+B6,GND,,Power,,,,,Ground
+B7,GPIOB_P_23_PLLIN0,,,4A,1.8 V,,,User IO/PLL_CLKIN
+B8,GND,,Power,,,,,Ground
+B9,GPIOB_P_26_CDI16,,,4A,1.8 V,,,User IO
+B10,GND,,Power,,,,,Ground
+B11,GPIOB_P_29_CDI22,,,4A,1.8 V,,,User IO
+B12,GND,,Power,,,,,Ground
+B13,GPIOR_P_18,,,3B_3C,1.8 V,,,User IO
+B14,GND,,Power,,,,,Ground
+B15,GPIOR_N_20_CLK15_N,,,3B_3C,1.8 V,,,User IO/GCLK/RCLK
+B16,GND,,Power,,,,,Ground
+B17,GPIOR_N_26_CLK9_N,,,3B_3C,1.8 V,,,User IO/GCLK
+B18,GND,,Power,,,,,Ground
+B19,GPIOR_P_41,,,3A,1.8 V,,,User IO/VREF
+B20,GND,,Power,,,,,Ground
+B21,GPIOR_P_44_EXTFB,,,3A,1.8 V,,,User IO/PLL_EXTFB
+B22,GPIOR_N_44,,,3A,1.8 V,,,User IO/PLL_EXTFB
+C1,GPIOB_P_11_PLLIN0,my_pll_clk.P,Input,4B,1.8 V,1.8 V LVCMOS,,User IO/PLL_CLKIN
+C2,GPIOB_P_13_CBSEL0_CLK0_P,,,4B,1.8 V,,,User IO/GCLK/RCLK
+C3,GPIOB_P_15_CLK2_P,,,4B,1.8 V,,,User IO/GCLK
+C4,GPIOB_N_17_CLK4_N,,,4B,1.8 V,,,User IO/GCLK
+C5,GPIOB_N_20_CDI7_CLK7_N,,,4B,1.8 V,,,User IO/GCLK
+C6,GPIOB_N_22_CDI10,,,4B,1.8 V,,,User IO
+C7,GPIOB_N_23_CDI12,,,4A,1.8 V,,,User IO/PLL_CLKIN
+C8,GPIOB_N_27_CDI18,,,4A,1.8 V,,,User IO
+C9,GPIOB_N_26_CDI17,,,4A,1.8 V,,,User IO
+C10,GPIOB_N_31_CDI26,,,4A,1.8 V,,,User IO
+C11,GPIOB_N_29_CDI23,,,4A,1.8 V,,,User IO
+C12,GPIOB_N_34,,,4A,1.8 V,,,User IO
+C13,GPIOR_N_18,,,3B_3C,1.8 V,,,User IO
+C14,GPIOR_P_19,,,3B_3C,1.8 V,,,User IO
+C15,GPIOR_P_20_CLK15_P,,,3B_3C,1.8 V,,,User IO/GCLK/RCLK
+C16,GPIOR_N_24_CLK11_N,,,3B_3C,1.8 V,,,User IO/GCLK
+C17,GPIOR_P_27_CLK8_P,,,3B_3C,1.8 V,,,User IO/GCLK
+C18,GPIOR_N_27_CLK8_N,,,3B_3C,1.8 V,,,User IO/GCLK
+C19,GPIOR_N_41,,,3A,1.8 V,,,User IO
+C20,GPIOR_P_45_PLLIN0,,,3A,1.8 V,,,User IO/PLL_CLKIN
+C21,GPIOT_N_20_CLK23_N,,,2A_2B_2C,1.8 V,,,User IO/GCLK
+C22,GPIOT_P_20_CLK23_P,,,2A_2B_2C,1.8 V,,,User IO/GCLK
+D1,VCCIO4B,,Power,4B,1.8 V,,,VCCIO Power
+D2,GPIOB_N_13_CBSEL1_CLK0_N,io_asyncResetn_in.N,Input,4B,1.8 V,1.8 V LVCMOS,,User IO/GCLK/RCLK
+D3,GND,,Power,,,,,Ground
+D4,GPIOB_P_17_CLK4_P,,,4B,1.8 V,,,User IO/GCLK
+D5,GND,,Power,,,,,Ground
+D6,GPIOB_P_22_CDI11,,,4B,1.8 V,,,User IO
+D7,VCCIO4A,,Power,4A,1.8 V,,,VCCIO Power
+D8,GPIOB_P_27_CDI19,,,4A,1.8 V,,,User IO
+D9,VCCIO4A,,Power,4A,1.8 V,,,VCCIO Power
+D10,GPIOB_P_31_CDI27,,,4A,1.8 V,,,User IO
+D11,VCCIO4A,,Power,4A,1.8 V,,,VCCIO Power
+D12,GPIOB_P_34,,,4A,1.8 V,,,User IO
+D13,VCCIO3B_3C,,Power,3B_3C,1.8 V,,,VCCIO Power
+D14,GPIOR_N_19,,,3B_3C,1.8 V,,,User IO
+D15,VCCIO3B_3C,,Power,3B_3C,1.8 V,,,VCCIO Power
+D16,GPIOR_P_24_CLK11_P,,,3B_3C,1.8 V,,,User IO/GCLK
+D17,VCCIO3B_3C,,Power,3B_3C,1.8 V,,,VCCIO Power
+D18,GPIOR_P_43,,,3A,1.8 V,,,User IO
+D19,VCCIO3A,,Power,3A,1.8 V,,,VCCIO Power
+D20,GPIOR_N_45,,,3A,1.8 V,,,User IO/PLL_CLKIN
+D21,VCCIO2A_2B_2C,,Power,2A_2B_2C,1.8 V,,,VCCIO Power
+D22,GPIOT_P_18_CLK21_P,,,2A_2B_2C,1.8 V,,,User IO/GCLK
+E1,GPIOB_N_02_CSO,,,4C,1.8 V,,,User IO/Configuration
+E2,GPIOB_P_08_SSL_N,system_spi_0_io_ss.P,Output,4C,1.8 V,1.8 V LVCMOS,,User IO/VREF/Configuration
+E3,GPIOB_P_14_NSTATUS_CLK1_P,,,4B,1.8 V,,,User IO/GCLK/Configuration
+E4,GPIOB_N_14_TEST_N_CLK1_N,io_clk_rst.N,Input,4B,1.8 V,1.8 V LVCMOS,,User IO/GCLK/Configuration
+E5,GPIOB_P_19_CDI5_CLK6_P,,,4B,1.8 V,,,User IO/GCLK/RCLK
+E6,GPIOB_N_24_CDI13,,,4A,1.8 V,,,User IO/PLL_EXTFB
+E7,GPIOB_P_24_EXTFB,,,4A,1.8 V,,,User IO/PLL_EXTFB
+E8,GPIOB_N_30_CDI24,,,4A,1.8 V,,,User IO
+E9,GPIOB_P_30_CDI25,,,4A,1.8 V,,,User IO
+E10,GPIOB_N_33_CDI30,,,4A,1.8 V,,,User IO/RCLK
+E11,GPIOR_P_17,,,3B_3C,1.8 V,,,User IO
+E12,GPIOR_N_17,,,3B_3C,1.8 V,,,User IO
+E13,GPIOR_P_21_CLK14_P,,,3B_3C,1.8 V,,,User IO/GCLK
+E14,GPIOR_N_21_CLK14_N,,,3B_3C,1.8 V,,,User IO/GCLK
+E15,GPIOR_N_28,,,3B_3C,1.8 V,,,User IO
+E16,GPIOR_P_28,,,3B_3C,1.8 V,,,User IO
+E17,REF_RES_3A,,Input,3A,1.8 V,,,
+E18,GPIOR_N_43,,,3A,1.8 V,,,User IO
+E19,REF_RES_2C,,Input,2A_2B_2C,1.8 V,,,
+E20,GPIOT_P_19_CLK22_P,,,2A_2B_2C,1.8 V,,,User IO/GCLK/RCLK
+E21,GPIOT_N_19_CLK22_N,,,2A_2B_2C,1.8 V,,,User IO/GCLK/RCLK
+E22,GPIOT_N_18_CLK21_N,,,2A_2B_2C,1.8 V,,,User IO/GCLK
+F1,GPIOB_P_02_CSI,,,4C,1.8 V,,,User IO/Configuration
+F2,GND,,Power,,,,,Ground
+F3,GPIOB_N_10_CDI2,,,4C,1.8 V,,,User IO
+F4,VCCIO4B,,Power,4B,1.8 V,,,VCCIO Power
+F5,GPIOB_N_19_CDI4_CLK6_N,,,4B,1.8 V,,,User IO/GCLK/RCLK
+F6,GND,,Power,,,,,Ground
+F7,GPIOR_66,io_jtag_tdo,Output,BR,3.3 V,3.3 V LVCMOS,,User IO
+F8,GPIOR_68,system_uart_0_io_rxd,Input,BR,3.3 V,3.3 V LVTTL,,User IO
+F9,GND,,Power,,,,,Ground
+F10,GPIOB_P_33_CDI31,,,4A,1.8 V,,,User IO/RCLK
+F11,REF_RES_4A,,Input,4A,1.8 V,,,
+F12,GND,,Power,,,,,Ground
+F13,GPIOR_P_25_CLK10_P,,,3B_3C,1.8 V,,,User IO/GCLK
+F14,GND,,Power,,,,,Ground
+F15,GPIOR_63,,Input,TR,1.8 V,,weak pullup,User IO
+F16,GPIOR_62,,Input,TR,1.8 V,,weak pullup,User IO
+F17,GPIOR_60,,Input,TR,1.8 V,,weak pullup,User IO
+F18,GND,,Power,,,,,Ground
+F19,GPIOT_P_16_CLK19_P,,,2A_2B_2C,1.8 V,,,User IO/GCLK/VREF
+F20,GND,,Power,,,,,Ground
+F21,GPIOT_N_14_CLK17_N,,,2A_2B_2C,1.8 V,,,User IO/GCLK
+F22,GND,,Power,,,,,Ground
+G1,GPIOB_P_00_PLLIN0,,,4C,1.8 V,,,User IO/PLL_CLKIN
+G2,GPIOB_P_09_CDI0,system_spi_0_io_data_0.P,Bidirectional,4C,1.8 V,1.8 V LVCMOS,,User IO/Configuration
+G3,GPIOB_P_10_CDI3,,,4C,1.8 V,,,User IO
+G4,REF_RES_4B,,Input,4B,1.8 V,,,
+G5,GPIOB_N_18_CLK5_N,,,4B,1.8 V,,,User IO/GCLK/Configuration
+G6,GPIOB_P_18_CLK5_P,,,4B,1.8 V,,,User IO/GCLK/Configuration
+G7,GPIOR_70,,Input,BR,3.3 V,,weak pullup,User IO
+G8,VCCIO33_BR,,Power,BR,3.3 V,,,VCCIO Power
+G9,GPIOR_65,io_jtag_tms,Input,BR,3.3 V,3.3 V LVCMOS,,User IO
+G10,GPIOR_67,system_uart_0_io_txd,Output,BR,3.3 V,3.3 V LVTTL,,User IO
+G11,GPIOR_P_22_CLK13_P,,,3B_3C,1.8 V,,,User IO/GCLK
+G12,GPIOR_N_22_CLK13_N,,,3B_3C,1.8 V,,,User IO/GCLK
+G13,GPIOR_N_25_CLK10_N,,,3B_3C,1.8 V,,,User IO/GCLK
+G14,VCCA_TR,,Power,,,,,0.95 V PLL Power
+G15,GPIOR_61,,Input,TR,1.8 V,,weak pullup,User IO
+G16,VCCIO33_TR,,Power,TR,1.8 V,,,VCCIO Power
+G17,GPIOR_59,,Input,TR,1.8 V,,weak pullup,User IO
+G18,GPIOT_N_17_CLK20_N,,,2A_2B_2C,1.8 V,,,User IO/GCLK
+G19,GPIOT_N_16_CLK19_N,,,2A_2B_2C,1.8 V,,,User IO/GCLK
+G20,GPIOT_P_15_CLK18_P,,,2A_2B_2C,1.8 V,,,User IO/GCLK
+G21,GPIOT_P_14_CLK17_P,,,2A_2B_2C,1.8 V,,,User IO/GCLK
+G22,GPIOT_P_12_EXTFB,,,2A_2B_2C,1.8 V,,,User IO/PLL_EXTFB
+H1,VCCIO4C,,Power,4C,1.8 V,,,VCCIO Power
+H2,GPIOB_N_09_CDI1,system_spi_0_io_data_1.N,Bidirectional,4C,1.8 V,1.8 V LVCMOS,,User IO/Configuration
+H3,GND,,Power,,,,,Ground
+H4,GPIOL_07,,Input,BL,3.3 V,,weak pullup,User IO/MIPI_CLKIN
+H5,GPIOL_04_CLK25,,Input,BL,3.3 V,,weak pullup,User IO/GCLK
+H6,GPIOL_03_CLK24,io_jtag_tdi,Input,BL,3.3 V,3.3 V LVCMOS,,User IO/GCLK
+H7,GPIOR_69,,Input,BR,3.3 V,,weak pullup,User IO
+H8,GPIOR_71,,Input,BR,3.3 V,,weak pullup,User IO
+H9,VCCAUX,,Power,4C,1.8 V,,,
+H10,VCCA_BR,,Power,,,,,0.95 V PLL Power
+H11,VCC,,Power,,,,,0.95 V VCC Power
+H12,REF_RES_3B,,Input,3B_3C,1.8 V,,,
+H13,VCC,,Power,,,,,0.95 V VCC Power
+H14,VCCAUX,,Power,4C,1.8 V,,,
+H15,GPIOR_58,,Input,TR,1.8 V,,weak pullup,User IO
+H16,GPIOR_56,,Input,TR,1.8 V,,weak pullup,User IO
+H17,GPIOL_27_CLK28,,Input,TL,3.3 V,,weak pullup,User IO/GCLK/MIPI_CLKIN
+H18,GPIOT_P_17_CLK20_P,,,2A_2B_2C,1.8 V,,,User IO/GCLK
+H19,GPIOT_P_13_CLK16_P,,,2A_2B_2C,1.8 V,,,User IO/GCLK/RCLK
+H20,GPIOT_N_15_CLK18_N,,,2A_2B_2C,1.8 V,,,User IO/GCLK
+H21,VCCIO2A_2B_2C,,Power,2A_2B_2C,1.8 V,,,VCCIO Power
+H22,GPIOT_N_12,,,2A_2B_2C,1.8 V,,,User IO/PLL_EXTFB
+J1,REF_RES_4C,,Input,4C,1.8 V,,,
+J2,GPIOB_N_01_CCK,system_spi_0_io_sclk_write.N,Output,4C,1.8 V,1.8 V LVCMOS,,User IO/PLL_EXTFB/Configuration
+J3,GPIOB_P_01_EXTFB,,,4C,1.8 V,,,User IO/PLL_EXTFB
+J4,VQPS,,Power,,,,,
+J5,VCCIO33_BL,,Power,BL,3.3 V,,,VCCIO Power
+J6,GPIOL_05_CLK26,,Input,BL,3.3 V,,weak pullup,User IO/GCLK
+J7,GPIOL_00_PLLIN1,,Input,BL,3.3 V,,weak pullup,User IO/PLL_CLKIN
+J8,VCC,,Power,,,,,0.95 V VCC Power
+J9,GND,,Power,,,,,Ground
+J10,VCC,,Power,,,,,0.95 V VCC Power
+J11,GND,,Power,,,,,Ground
+J12,VCC,,Power,,,,,0.95 V VCC Power
+J13,GND,,Power,,,,,Ground
+J14,VCC,,Power,,,,,0.95 V VCC Power
+J15,GND,,Power,,,,,Ground
+J16,GPIOL_28_CLK29,,Input,TL,3.3 V,,weak pullup,User IO/GCLK/MIPI_CLKIN
+J17,VCCIO33_TL,,Power,TL,3.3 V,,,VCCIO Power
+J18,GPIOL_29_CLK30,io_jtag_tck,Input,TL,3.3 V,3.3 V LVCMOS,,User IO/GCLK
+J19,GPIOT_N_13_CLK16_N,,,2A_2B_2C,1.8 V,,,User IO/GCLK/RCLK
+J20,REF_RES_2B,,Input,2A_2B_2C,1.8 V,,,
+J21,GPIOT_N_11,,,2A_2B_2C,1.8 V,,,User IO/PLL_CLKIN
+J22,GPIOT_P_11_PLLIN0,,,2A_2B_2C,1.8 V,,,User IO/PLL_CLKIN
+K1,MIPI0_RXDN3,,,BL,3.3 V,,,
+K2,MIPI0_RXDP3,,,BL,3.3 V,,,
+K3,MIPI0_RXDP2,,,BL,3.3 V,,,
+K4,CRESET_N,,Input,4C,1.8 V,,,Configuration
+K5,TCK,,Input,BL,3.3 V,,,Configuration
+K6,TDI,,Input,BL,3.3 V,,,Configuration
+K7,GPIOL_06_CLK27,,Input,BL,3.3 V,,weak pullup,User IO/GCLK/MIPI_CLKIN
+K8,GND,,Power,,,,,Ground
+K9,VCC,,Power,,,,,0.95 V VCC Power
+K10,GND,,Power,,,,,Ground
+K11,VCC,,Power,,,,,0.95 V VCC Power
+K12,GND,,Power,,,,,Ground
+K13,VCC,,Power,,,,,0.95 V VCC Power
+K14,GND,,Power,,,,,Ground
+K15,VCC,,Power,,,,,0.95 V VCC Power
+K16,GPIOL_30_CLK31,,Input,TL,3.3 V,,weak pullup,User IO/GCLK
+K17,GPIOL_32_PLLIN1,ddr_pll_refclk,Input,TL,3.3 V,3.3 V LVCMOS,,User IO/PLL_CLKIN
+K18,GPIOL_36_PLLIN1,,Input,TL,3.3 V,,weak pullup,User IO/PLL_CLKIN
+K19,REF_RES_2A,,Input,2A_2B_2C,1.8 V,,,
+K20,MIPI2_TXDP0,,,TL,3.3 V,,,
+K21,MIPI2_TXDN0,,,TL,3.3 V,,,
+K22,MIPI2_TXDP1,,,TL,3.3 V,,,
+L1,MIPI0_TXDP2,,,BL,3.3 V,,,
+L2,GND,,Power,,,,,Ground
+L3,MIPI0_RXDN2,,,BL,3.3 V,,,
+L4,GND,,Power,,,,,Ground
+L5,MIPI0_RXDP1,,,BL,3.3 V,,,
+L6,TMS,,Input,BL,3.3 V,,,Configuration
+L7,GND,,Power,,,,,Ground
+L8,VCC,,Power,,,,,0.95 V VCC Power
+L9,GND,,Power,,,,,Ground
+L10,VCC,,Power,,,,,0.95 V VCC Power
+L11,GND,,Power,,,,,Ground
+L12,VCC,,Power,,,,,0.95 V VCC Power
+L13,GND,,Power,,,,,Ground
+L14,VCC,,Power,,,,,0.95 V VCC Power
+L15,GND,,Power,,,,,Ground
+L16,GPIOL_26_PLLIN1,,Input,TL,3.3 V,,weak pullup,User IO/PLL_CLKIN
+L17,GND,,Power,,,,,Ground
+L18,MIPI2_RXDP1,,,TL,3.3 V,,,
+L19,MIPI2_RXDP2,,,TL,3.3 V,,,
+L20,MIPI2_RXDN2,,,TL,3.3 V,,,
+L21,GND,,Power,,,,,Ground
+L22,MIPI2_TXDN1,,,TL,3.3 V,,,
+M1,MIPI0_TXDN2,,,BL,3.3 V,,,
+M2,MIPI0_TXDN0,,,BL,3.3 V,,,
+M3,MIPI0_TXDP0,,,BL,3.3 V,,,
+M4,MIPI0_RXDP4,,,BL,3.3 V,,,
+M5,MIPI0_RXDN1,,,BL,3.3 V,,,
+M6,MIPI0_RXDP0,,,BL,3.3 V,,,
+M7,CDONE,,Bidirectional,4C,1.8 V,,,Configuration
+M8,GND,,Power,,,,,Ground
+M9,VCC,,Power,,,,,0.95 V VCC Power
+M10,GND,,Power,,,,,Ground
+M11,VCC,,Power,,,,,0.95 V VCC Power
+M12,GND,,Power,,,,,Ground
+M13,VCC,,Power,,,,,0.95 V VCC Power
+M14,GND,,Power,,,,,Ground
+M15,VCC,,Power,,,,,0.95 V VCC Power
+M16,MIPI2_RXDP0,,,TL,3.3 V,,,
+M17,MIPI2_RXDN0,,,TL,3.3 V,,,
+M18,MIPI2_RXDN1,,,TL,3.3 V,,,
+M19,GND,,Power,,,,,Ground
+M20,MIPI2_TXDP2,,,TL,3.3 V,,,
+M21,MIPI2_TXDN2,,,TL,3.3 V,,,
+M22,MIPI3_TXDN3,,,TL,3.3 V,,,
+N1,MIPI0_TXDN4,,,BL,3.3 V,,,
+N2,MIPI0_TXDP4,,,BL,3.3 V,,,
+N3,MIPI0_TXDP3,,,BL,3.3 V,,,
+N4,MIPI0_RXDN4,,,BL,3.3 V,,,
+N5,VCC18A_MIPI0_1_RX,,Power,BL,3.3 V,,,1.8 V MIPI RX Power
+N6,MIPI0_RXDN0,,,BL,3.3 V,,,
+N7,TDO,,Output,BL,3.3 V,,,Configuration
+N8,VCCAUX,,Power,4C,1.8 V,,,
+N9,VDD_PHY,,Power,DDR,,,,
+N10,VDD_PHY,,Power,DDR,,,,
+N11,GND,,Power,,,,,Ground
+N12,VDD_PHY,,Power,DDR,,,,
+N13,GND,,Power,,,,,Ground
+N14,VDD_PHY,,Power,DDR,,,,
+N15,VCCAUX,,Power,4C,1.8 V,,,
+N16,VCC18A_MIPI2_3_RX,,Power,TL,3.3 V,,,1.8 V MIPI RX Power
+N17,MIPI2_RXDP3,,,TL,3.3 V,,,
+N18,MIPI2_RXDN3,,,TL,3.3 V,,,
+N19,MIPI2_TXDP3,,,TL,3.3 V,,,
+N20,MIPI2_TXDN3,,,TL,3.3 V,,,
+N21,MIPI3_TXDP2,,,TL,3.3 V,,,
+N22,MIPI3_TXDP3,,,TL,3.3 V,,,
+P1,MIPI1_TXDP0,,,BL,3.3 V,,,
+P2,GND,,Power,,,,,Ground
+P3,MIPI0_TXDN3,,,BL,3.3 V,,,
+P4,VCC18A_MIPI0_1_TX,,Power,BL,3.3 V,,,1.8 V MIPI TX Power
+P5,MIPI0_TXDN1,,,BL,3.3 V,,,
+P6,MIPI0_TXDP1,,,BL,3.3 V,,,
+P7,VCCA_BL,,Power,,,,,0.95 V PLL Power
+P8,GND,,Power,,,,,Ground
+P9,VDD_PHY,,Power,DDR,,,,
+P10,VDD_PHY,,Power,DDR,,,,
+P11,VDD_PHY,,Power,DDR,,,,
+P12,VDD_PHY,,Power,DDR,,,,
+P13,VDD_PHY,,Power,DDR,,,,
+P14,VDD_PHY,,Power,DDR,,,,
+P15,VCCA_TL,,Power,,,,,0.95 V PLL Power
+P16,MIPI2_RXDP4,,,TL,3.3 V,,,
+P17,MIPI2_RXDN4,,,TL,3.3 V,,,
+P18,MIPI2_TXDP4,,,TL,3.3 V,,,
+P19,MIPI2_TXDN4,,,TL,3.3 V,,,
+P20,VCC18A_MIPI2_3_TX,,Power,TL,3.3 V,,,1.8 V MIPI TX Power
+P21,MIPI3_TXDN2,,,TL,3.3 V,,,
+P22,GND,,Power,,,,,Ground
+R1,MIPI1_TXDN0,,,BL,3.3 V,,,
+R2,MIPI1_TXDP3,,,BL,3.3 V,,,
+R3,MIPI1_TXDN3,,,BL,3.3 V,,,
+R4,MIPI1_TXDP2,,,BL,3.3 V,,,
+R5,MIPI1_TXDN4,,,BL,3.3 V,,,
+R6,MIPI1_TXDP4,,,BL,3.3 V,,,
+R7,VCC18A_MIPI0_1_TX,,Power,BL,3.3 V,,,1.8 V MIPI TX Power
+R8,VCC,,Power,,,,,0.95 V VCC Power
+R9,GND,,Power,,,,,Ground
+R10,VDD_PHY,,Power,DDR,,,,
+R11,VDD_PHY,,Power,DDR,,,,
+R12,GND,,Power,,,,,Ground
+R13,VDD_PHY,,Power,DDR,,,,
+R14,GND,,Power,,,,,Ground
+R15,VCC,,Power,,,,,0.95 V VCC Power
+R16,VCC,,Power,,,,,0.95 V VCC Power
+R17,VCC18A_MIPI2_3_TX,,Power,TL,3.3 V,,,1.8 V MIPI TX Power
+R18,MIPI3_TXDP4,,,TL,3.3 V,,,
+R19,MIPI3_TXDN4,,,TL,3.3 V,,,
+R20,MIPI3_TXDP1,,,TL,3.3 V,,,
+R21,MIPI3_RXDN4,,,TL,3.3 V,,,
+R22,MIPI3_RXDP4,,,TL,3.3 V,,,
+T1,MIPI1_RXDN3,,,BL,3.3 V,,,
+T2,MIPI1_RXDP4,,,BL,3.3 V,,,
+T3,MIPI1_RXDN4,,,BL,3.3 V,,,
+T4,MIPI1_TXDN2,,,BL,3.3 V,,,
+T5,VCC18A_MIPI0_1_RX,,Power,BL,3.3 V,,,1.8 V MIPI RX Power
+T6,MIPI1_TXDP1,,,BL,3.3 V,,,
+T7,MIPI1_TXDN1,,,BL,3.3 V,,,
+T8,VCC,,Power,,,,,0.95 V VCC Power
+T9,VDDQ_PHY,,Power,DDR,,,,
+T10,VDD_PHY,,Power,DDR,,,,
+T11,VDDPLL_MCB_TOP_PHY,,Power,DDR,,,,
+T12,VDDQ_CK_PHY,,Power,DDR,,,,
+T13,VDD_PHY,,Power,DDR,,,,
+T14,VDDQ_PHY,,Power,DDR,,,,
+T15,GND,,Power,,,,,Ground
+T16,VCC,,Power,,,,,0.95 V VCC Power
+T17,MIPI3_TXDN0,,,TL,3.3 V,,,
+T18,MIPI3_TXDP0,,,TL,3.3 V,,,
+T19,VCC18A_MIPI2_3_RX,,Power,TL,3.3 V,,,1.8 V MIPI RX Power
+T20,MIPI3_TXDN1,,,TL,3.3 V,,,
+T21,MIPI3_RXDN3,,,TL,3.3 V,,,
+T22,MIPI3_RXDP3,,,TL,3.3 V,,,
+U1,MIPI1_RXDP3,,,BL,3.3 V,,,
+U2,GND,,Power,,,,,Ground
+U3,MIPI1_RXDP1,,,BL,3.3 V,,,
+U4,MIPI1_RXDN1,,,BL,3.3 V,,,
+U5,MIPI1_RXDP2,,,BL,3.3 V,,,
+U6,MIPI1_RXDN2,,,BL,3.3 V,,,
+U7,VCC,,Power,,,,,0.95 V VCC Power
+U8,VCC,,Power,,,,,0.95 V VCC Power
+U9,VDDQ_PHY,,Power,DDR,,,,
+U10,GND,,Power,,,,,Ground
+U11,VDDQX_PHY,,Power,DDR,,,,
+U12,GND,,Power,,,,,Ground
+U13,VDDQX_PHY,,Power,DDR,,,,
+U14,GND,,Power,,,,,Ground
+U15,VDDQ_PHY,,Power,DDR,,,,
+U16,VCC,,Power,,,,,0.95 V VCC Power
+U17,MIPI3_RXDP1,,,TL,3.3 V,,,
+U18,MIPI3_RXDN1,,,TL,3.3 V,,,
+U19,MIPI3_RXDN2,,,TL,3.3 V,,,
+U20,MIPI3_RXDP2,,,TL,3.3 V,,,
+U21,GND,,Power,,,,,Ground
+U22,MIPI3_RXDN0,,,TL,3.3 V,,,
+V1,MIPI1_RXDN0,,,BL,3.3 V,,,
+V2,MIPI1_RXDP0,,,BL,3.3 V,,,
+V3,GND,,Power,,,,,Ground
+V4,VDDQ_PHY,,Power,DDR,,,,
+V5,GND,,Power,,,,,Ground
+V6,VDDQ_PHY,,Power,DDR,,,,
+V7,GND,,Power,,,,,Ground
+V8,DDR_DQ[27],,,DDR,,,,
+V9,DDR_DQ[21],,,DDR,,,,
+V10,VDDQX_PHY,,Power,DDR,,,,
+V11,VDDQX_PHY,,Power,DDR,,,,
+V12,VDDQX_PHY,,Power,DDR,,,,
+V13,VDDQX_PHY,,Power,DDR,,,,
+V14,DDR_DQ[8],,,DDR,,,,
+V15,DDR_DQ[5],,,DDR,,,,
+V16,VDDQ_PHY,,Power,DDR,,,,
+V17,GND,,Power,,,,,Ground
+V18,VDDQ_PHY,,Power,DDR,,,,
+V19,GND,,Power,,,,,Ground
+V20,VDDQ_PHY,,Power,DDR,,,,
+V21,GND,,Power,,,,,Ground
+V22,MIPI3_RXDP0,,,TL,3.3 V,,,
+W1,GND,,Power,,,,,Ground
+W2,VDDQ_PHY,,Power,DDR,,,,
+W3,DDR_DQ[30],,,DDR,,,,
+W4,DDR_DQ[31],,,DDR,,,,
+W5,DDR_DQ[28],,,DDR,,,,
+W6,DDR_DQ[29],,,DDR,,,,
+W7,DDR_DQ[23],,,DDR,,,,
+W8,VDDQ_PHY,,Power,DDR,,,,
+W9,GND,,Power,,,,,Ground
+W10,VDDQX_PHY,,Power,DDR,,,,
+W11,GND,,Power,,,,,Ground
+W12,VDDQX_PHY,,Power,DDR,,,,
+W13,GND,,Power,,,,,Ground
+W14,DDR_DQ[13],,,DDR,,,,
+W15,GND,,Power,,,,,Ground
+W16,DDR_DQ[10],,,DDR,,,,
+W17,DDR_DQ[4],,,DDR,,,,
+W18,DDR_DQ[3],,,DDR,,,,
+W19,DDR_DQ[2],,,DDR,,,,
+W20,DDR_DQ[0],,,DDR,,,,
+W21,DDR_DQ[1],,,DDR,,,,
+W22,VDDQ_PHY,,Power,DDR,,,,
+Y1,DDR_DM[3],,,DDR,,,,
+Y2,DDR_DQS_N[3],,,DDR,,,,
+Y3,DDR_DQS[3],,,DDR,,,,
+Y4,DDR_DQ[24],,,DDR,,,,
+Y5,DDR_DQS_N[2],,,DDR,,,,
+Y6,DDR_DQ[22],,,DDR,,,,
+Y7,DDR_DQ[17],,,DDR,,,,
+Y8,DDR_A[3],,,DDR,,,,
+Y9,DDR_A[5],,,DDR,,,,
+Y10,DDR_A[0],,,DDR,,,,
+Y11,NC,,,,,,,
+Y12,NC,,,,,,,
+Y13,DDR_CS_N[0],,,DDR,,,,
+Y14,DDR_CS_N[2],,,DDR,,,,
+Y15,DDR_CS_N[1],,,DDR,,,,
+Y16,DDR_CS_N[3],,,DDR,,,,
+Y17,DDR_DQ[9],,,DDR,,,,
+Y18,DDR_DQ[11],,,DDR,,,,
+Y19,DDR_DQ[7],,,DDR,,,,
+Y20,DDR_DM[0],,,DDR,,,,
+Y21,DDR_DQS_N[0],,,DDR,,,,
+Y22,DDR_DQS[0],,,DDR,,,,

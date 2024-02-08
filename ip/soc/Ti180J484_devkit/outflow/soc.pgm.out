@@ -1,0 +1,33 @@
+
+Efinix FPGA Bitstream Generator.
+Version: 2023.2.307.1.14 
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+Compiled: Dec 15 2023.
+
+Using source file "C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/work_pnr/soc.lbf"
+Generating HEX programming file for device "Ti180J484", family "Titanium"
+Using periphery source file "C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow/soc.lpf"
+Generating bit file: "C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow/soc.bit"
+HEX Generation Options Summary:
+	Listing options specified to bitstream generation:
+	bitstream_compression                    = on
+	oscillator_clock_divider                 = DIV8
+	enable_external_master_clock             = off
+	spi_low_power_mode                       = on
+	active_capture_clk_edge                  = negedge
+	four_byte_addressing                     = off
+	enable_remote_update                     = off
+	release_tri_then_reset                   = on
+	enable_seu_crc_check                     = off
+	seu_mode                                 = automatic
+	seu_wait_interval                        = 0xFFFFFF
+	jtag_usercode                            = 0xFFFFFFFF
+	io_weak_pullup                           = on
+Finished generating "C:/Efinity/2023.2/project/sapphire_donut_demo/ip/soc/Ti180J484_devkit/outflow/soc.hex"
+Efinity Bitstream Generator took 10.7056 seconds.
+	Efinity Bitstream Generator took 9.03125 seconds (approximately) in total CPU time.
+Efinity Bitstream Generator virtual memory usage: begin = 2.452 MB, end = 8.036 MB, delta = 5.584 MB
+	Efinity Bitstream Generator peak virtual memory usage = 425.112 MB
+Efinity Bitstream Generator resident set memory usage: begin = 7.424 MB, end = 16.044 MB, delta = 8.62 MB
+	Efinity Bitstream Generator peak resident set memory usage = 405.976 MB

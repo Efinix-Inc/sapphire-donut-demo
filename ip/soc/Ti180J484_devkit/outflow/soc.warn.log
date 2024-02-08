@@ -1,0 +1,193 @@
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Feb 08, 2024 11:42:33
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] system task 'display' is ignored for synthesis (VERI-1142) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77823)
+[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_cache_io_cpu_fetch_isRemoved' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:60837)
+[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_iBusRsp_output_payload_rsp_error' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62069)
+[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_iBusRsp_output_payload_isRvc' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62071)
+[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_decompressor_output_payload_rsp_error' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62082)
+[EFX-0011 VERI-WARNING] net 'CsrPlugin_mtvec_mode[1]' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62403)
+[EFX-0011 VERI-WARNING] net 'CsrPlugin_stvec_mode[1]' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62454)
+[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_cache_io_cpu_fetch_isRemoved' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:50370)
+[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_iBusRsp_output_payload_rsp_error' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:51601)
+[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_iBusRsp_output_payload_isRvc' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:51603)
+[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_decompressor_output_payload_rsp_error' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:51614)
+[EFX-0011 VERI-WARNING] net 'CsrPlugin_mtvec_mode[1]' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:51935)
+[EFX-0011 VERI-WARNING] net 'CsrPlugin_stvec_mode[1]' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:51986)
+[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_cache_io_cpu_fetch_isRemoved' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:39903)
+[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_iBusRsp_output_payload_rsp_error' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:41134)
+[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_iBusRsp_output_payload_isRvc' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:41136)
+[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_decompressor_output_payload_rsp_error' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:41147)
+[EFX-0011 VERI-WARNING] net 'CsrPlugin_mtvec_mode[1]' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:41468)
+[EFX-0011 VERI-WARNING] net 'CsrPlugin_stvec_mode[1]' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:41519)
+[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_cache_io_cpu_fetch_isRemoved' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:29436)
+[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_iBusRsp_output_payload_rsp_error' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:30667)
+[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_iBusRsp_output_payload_isRvc' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:30669)
+[EFX-0011 VERI-WARNING] net 'IBusCachedPlugin_decompressor_output_payload_rsp_error' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:30680)
+[EFX-0011 VERI-WARNING] net 'CsrPlugin_mtvec_mode[1]' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:31001)
+[EFX-0011 VERI-WARNING] net 'CsrPlugin_stvec_mode[1]' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:31052)
+[EFX-0011 VERI-WARNING] system task 'display' is ignored for synthesis (VERI-1142) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:28670)
+[EFX-0011 VERI-WARNING] system task 'finish' is ignored for synthesis (VERI-1142) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:28671)
+[EFX-0011 VERI-WARNING] system task 'display' is ignored for synthesis (VERI-1142) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:28680)
+[EFX-0011 VERI-WARNING] system task 'finish' is ignored for synthesis (VERI-1142) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:28681)
+[EFX-0011 VERI-WARNING] net 'decode_shortPip_payload_value[31]' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:17183)
+[EFX-0011 VERI-WARNING] net 'decode_divSqrt_payload_roundMode[2]' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:17204)
+[EFX-0011 VERI-WARNING] net 'decode_divSqrt_payload_format[0]' does not have a driver (VDB-1002) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:17205)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:13538)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:73764)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:73765)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:79516)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:79517)
+[EFX-0011 VERI-WARNING] input port 'system_spi_0_io_data_2_read' remains unconnected for this instance (VDB-1053) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\top_soc.v:72)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_isValid. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77859)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[31]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[30]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[29]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[28]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[27]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[26]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[25]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[24]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[23]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[22]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[21]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[20]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[19]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[18]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[17]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[16]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[15]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[14]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0200 WARNING] Removing redundant signal : io_cpu_prefetch_pc[13]. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:77861)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'IBusCachedPlugin_cache_io_cpu_fetch_isRemoved'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:60837)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'IBusCachedPlugin_iBusRsp_output_payload_rsp_error'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62069)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'IBusCachedPlugin_iBusRsp_output_payload_isRvc'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62071)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'IBusCachedPlugin_decompressor_output_payload_rsp_error'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62082)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'CsrPlugin_mtvec_mode[1]'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62403)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'CsrPlugin_mtvec_mode[0]'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62403)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'CsrPlugin_stvec_mode[1]'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62454)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'CsrPlugin_stvec_mode[0]'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:62454)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'IBusCachedPlugin_cache_io_cpu_fetch_isRemoved'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:50370)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'IBusCachedPlugin_iBusRsp_output_payload_rsp_error'. (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:51601)
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_0_payload_fragment_source[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_0_payload_fragment_source[1]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_source[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_source[1]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_2_payload_fragment_source[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_2_payload_fragment_source[1]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_3_payload_fragment_source[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_3_payload_fragment_source[1]=0).
+[EFX-0266 WARNING] Module Instance 'rspLogic_rspToSyncFiltred_s2mPipe_fifo' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_0_payload_fragment_source[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_0_payload_fragment_source[1]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_source[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_source[1]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_2_payload_fragment_source[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_2_payload_fragment_source[1]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_3_payload_fragment_source[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_3_payload_fragment_source[1]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[0]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[1]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[2]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[3]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[4]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[5]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[6]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[7]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[8]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[9]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[10]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[11]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[12]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[13]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[14]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[15]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[16]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[17]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[18]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[19]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[20]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[21]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[22]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[23]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[24]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[25]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[26]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[27]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[28]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[29]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[30]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[31]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[32]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[33]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[34]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[35]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[36]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[37]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[38]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[39]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[40]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[41]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[42]=0).
+[EFX-0266 WARNING] Module Instance 'memory_arbiter' input pin tied to constant (io_inputs_1_payload_fragment_context[43]=0).
+[EFX-0266 WARNING] Module Instance 'tx' input pin tied to constant (io_cts=0).
+[EFX-0266 WARNING] Module Instance 'bridge_write_streamUnbuffered_queueWithOccupancy' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'mapping_cmdLogic_streamUnbuffered_queueWithAvailability' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'system_spi_0_io_logic_ctrl_io_rsp_queueWithOccupancy' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'system_cores_0_logic_cpu' input pin tied to constant (dBus_inv_payload_last=1).
+[EFX-0266 WARNING] Module Instance 'system_cores_1_logic_cpu' input pin tied to constant (dBus_inv_payload_last=1).
+[EFX-0266 WARNING] Module Instance 'system_cores_2_logic_cpu' input pin tied to constant (dBus_inv_payload_last=1).
+[EFX-0266 WARNING] Module Instance 'system_cores_3_logic_cpu' input pin tied to constant (dBus_inv_payload_last=1).
+[EFX-0266 WARNING] Module Instance 'toplevel_system_cores_0_logic_cpu_dBus_Bridge_withWriteBuffer_syncLogic_cmdCtx_fifo' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'toplevel_system_cores_1_logic_cpu_dBus_Bridge_withWriteBuffer_syncLogic_cmdCtx_fifo' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'toplevel_system_cores_2_logic_cpu_dBus_Bridge_withWriteBuffer_syncLogic_cmdCtx_fifo' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'toplevel_system_cores_3_logic_cpu_dBus_Bridge_withWriteBuffer_syncLogic_cmdCtx_fifo' input pin tied to constant (io_flush=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[0]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[1]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[2]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[3]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[4]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[5]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[6]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[7]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[8]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[9]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[10]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[11]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[12]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[13]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[14]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[15]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[16]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[17]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[18]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[19]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[20]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[21]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[22]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[23]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[24]=0).
+[EFX-0266 WARNING] Module Instance 'system_bridge_bmb_arbiter' input pin tied to constant (io_inputs_1_cmd_payload_fragment_data[25]=0).
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fabric_invalidationMonitor_logic_monitor/rspLogic_rspToSyncFiltred_s2mPipe_fifo/logic_ram' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:73366) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/dataCache_4/sync_syncContext_history' (64 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75870) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_cores_1_logic_cpu/dataCache_4/sync_syncContext_history' (64 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75870) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_cores_2_logic_cpu/dataCache_4/sync_syncContext_history' (64 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75870) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_cores_3_logic_cpu/dataCache_4/sync_syncContext_history' (64 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:75870) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_0_target' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19267) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_0_hit' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19268) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_0_writes' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19269) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_1_target' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19270) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_1_hit' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19271) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_1_writes' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19272) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_2_target' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19273) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_2_hit' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19274) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_2_writes' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19275) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_3_target' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19276) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_3_hit' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19277) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_fpu_logic/rf_scoreboards_3_writes' (32 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:19278) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_riscvJtag_debug_logic_dm/logic_progbufX_mem' (64 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:14682) because size is too small (<=64)
+[EFX-0657 WARNING] Mapping into logic memory block 'soc_inst/u_EfxSapphireSoc/system_riscvJtag_debug_logic_dm/logic_dataX_readMem' (64 bits) (C:\Efinity\2023.2\project\sapphire_donut_demo\ip\soc\Ti180J484_devkit\soc.v:14683) because size is too small (<=64)
